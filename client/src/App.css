@@ -55,3 +55,52 @@
   display: flex;
   flex-direction: row;
 }
+.flower-img{
+  height: 200px;
+  width:200px;
+
+}
+
+.card{
+  border: solid 1px black;
+  border-right: solid 5px red;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden-check{
+  position: absolute;
+  left: -100vw;
+}
+
+.checkbox_label{
+  border: solid 1px black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+.checkbox_label_checked{
+  border:solid 1px black;
+  border-radius: 10px;
+  background-color: blue;
+  color:white;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+.checkbox-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
