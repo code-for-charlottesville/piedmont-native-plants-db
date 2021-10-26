@@ -1,0 +1,57 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.home_intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* .home_intro p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+.home_intro a{
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  color: black
+}
+
+.search-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-btn{
+  border: solid 1px black;
+  border-radius: 10px;
+  padding:10px;
+  cursor: pointer;
+}
+.search-btns{
+  display: flex;
+  flex-direction: row;
+}
