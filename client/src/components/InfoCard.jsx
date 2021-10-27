@@ -39,6 +39,10 @@ export const InfoCard =()=>{
                     <p>{flowerObject.explaination}</p>
                 </div>
             </div>
+            <div className="edit-btns-group">
+                <div className="edit-btn">Edit</div>
+                <div className="delete-btn">Delete</div>
+            </div>
         </div>
     )
 }
