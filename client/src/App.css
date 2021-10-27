@@ -86,7 +86,7 @@
   font-weight: bold;
   border-radius: 10px;
   padding: 10px;
-  margin: 5px;
+  line-height: 3;
 }
 .checkbox_label_checked{
   border:solid 1px black;
@@ -94,13 +94,40 @@
   background-color: blue;
   color:white;
   padding: 10px;
-  margin: 5px;
-  margin-bottom: 20px;
-  margin-top:20px;
+  line-height: 3;
 }
 .checkbox-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100vw;
 
+}
+.advanced-search{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advanced-search-hidden{
+  display:none;
+}
+.adv-search-criteria-list{
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 50vh;
+  height:auto;
+}
+.adv-search-criteria-item{
+  border: solid 1px black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.cancel{
+  padding-left: 5px;
 }

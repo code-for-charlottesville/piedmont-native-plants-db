@@ -13,5 +13,14 @@ export const searchOptionsObject ={
         "virginia",
         "united states",
         "disputed"
+    ],
+    Plant_Type: [
+        "Wildflowers",
+        "Grasses, Sedges, & Reeds",
+        "Ferns & Fern Allies",
+        "Vines",
+        "Shrubs",
+        "Small Trees",
+        "Medium to Large Trees"
     ]
 }
