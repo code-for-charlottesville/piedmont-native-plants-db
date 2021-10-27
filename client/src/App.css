@@ -1,5 +1,11 @@
 
-
+html {
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 .App-header {
   background-color: #282c34;
   min-height: auto;
@@ -76,6 +82,31 @@
   flex-direction: row;
 }
 
+.edit-btns-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.edit-btns-group div{
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-btn{
+  background-color: lightskyblue;
+  color: white;
+}
+
+.delete-btn{
+  background-color: red;
+  color: white;
+}
+
+
 .hidden-check{
   position: absolute;
   left: -100vw;
@@ -106,8 +137,8 @@
 .advanced-search{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  width: 80vw;
+  justify-content: center;
 }
 
 .advanced-search-hidden{
@@ -118,7 +149,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  width: 50vh;
+  width: 50vw;
   height:auto;
 }
 .adv-search-criteria-item{
@@ -130,4 +161,11 @@
 }
 .cancel{
   padding-left: 5px;
+}
+
+.hide-btn{
+    border: solid 1px black;
+    border-radius: 10px;
+    padding:10px;
+    cursor: pointer;
 }

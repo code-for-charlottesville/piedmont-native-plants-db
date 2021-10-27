@@ -19,17 +19,17 @@ const flowerObject = {
 
 }
 
-export const InfoCard =()=>{
+export const InfoCard =(props)=>{
     return (
-        <div class="card">
+        <div className="card">
             <h1>{flowerObject.latin_name} | {flowerObject.english_name}</h1>
-            <div class="card-content">
-                <div class="left">
-                    <img class="flower-img" alt="flower" src={flowerObject.img_source}></img>
+            <div className="card-content">
+                <div className="left">
+                    <img className="flower-img" alt="flower" src={flowerObject.img_source}></img>
                     <p>Description:</p>
                     <p>{flowerObject.description}</p>
                 </div>
-                <div class="right">
+                <div className="right">
                     <h2>Information</h2>
                     <ol>
                         {Object.keys(flowerObject.info).map((item,key)=>(
@@ -38,6 +38,12 @@ export const InfoCard =()=>{
                     </ol>
                     <p>{flowerObject.explaination}</p>
                 </div>
+            </div>
+            <div className="edit-btns-group">
+                <div className="moreInfo-btn">More Info</div>
+                <div className="download-btn">Download</div>
+                <div className="edit-btn">Edit</div>
+                <div className="delete-btn">Delete</div>
             </div>
         </div>
     )
