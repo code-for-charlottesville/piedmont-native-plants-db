@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { InfoCard } from './InfoCard'
 import { searchOptionsObject } from '../elements/searchOptionsObject'
+import { Link } from 'react-router-dom'
 
 export const Search=()=>{
     const[searchResults, setSearchResults] = useState([])
@@ -57,6 +58,7 @@ export const Search=()=>{
     }
     return (
         <div class="search-form">
+        <Link to="/">Home</Link>
             <div>
                 <h2>Search for Plants</h2>
             </div>
