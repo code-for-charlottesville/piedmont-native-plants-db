@@ -79,7 +79,6 @@ export const Search=()=>{
                 </div>
                 <div className="advanced-search-hidden" id="advanced-search" hidden={true}>
                     <h3>Advanced Options</h3>
-                    
                         {Object.keys(searchOptionsObject).map((entry,key)=>(
                             <fieldset key={key} className="checkbox-container">
                                 {console.log(entry)}
@@ -96,8 +95,7 @@ export const Search=()=>{
                                     </div>
                                 ))}
                             </fieldset>
-                        )
-                        )}
+                        ))}
                     <div className="hide-btn" onClick={()=>_handleHideAdvanced()}>Hide</div>
                 </div>
             </form>
