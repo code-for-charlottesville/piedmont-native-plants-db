@@ -21,7 +21,7 @@ const flowerObject = {
 
 export const InfoCard =(props)=>{
     return (
-        <div className="card">
+        <div className="card layered-shadow">
             <h1>{flowerObject.latin_name} | {flowerObject.english_name}</h1>
             <div className="card-content">
                 <div className="left">

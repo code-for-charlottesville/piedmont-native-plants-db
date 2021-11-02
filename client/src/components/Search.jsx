@@ -7,6 +7,7 @@ export const Search=()=>{
     const[searchResults, setSearchResults] = useState([])
     const[advSearchItems, setAdvSearchItems] = useState([])
     const[advancedSearch, toggleAdvancedSearch]= useState(false)
+    const[sideBarSearch, setSideBarSearch] =  useState(false)
 
     const removeSearchCriteria =(criteria)=>{
         let position = advSearchItems.indexOf(criteria)
@@ -35,6 +36,9 @@ export const Search=()=>{
         setSearchResults([])
         setAdvSearchItems([])
     }
+    const _handleSideBarClick=()=>{
+        sideBarSearch ? setSideBarSearch(false) : setSideBarSearch(true)
+    }
     const _handleCheck=(search_crit)=>{
         if (document.getElementById(search_crit).classList.value === "checkbox_label") {
             document.getElementById(search_crit).classList.remove('checkbox_label')
@@ -57,54 +61,70 @@ export const Search=()=>{
         document.getElementById(search_crit).classList.remove('checkbox_label_checked')
     }
     return (
-        <div class="search-form">
-        <Link to="/">Home</Link>
-            <div>
-                <h2>Search for Plants</h2>
-            </div>
-            <form>
-                <div class="search-field">
-                    <label for="search">Plant Search</label>
-                    <input type="text" name="search" className="search">
-                    </input>
-                    <input type="submit" className="search-btn" value="Search" onClick={(e)=>_handleSearch(e)}></input>
+        <div className="search-display">
+            {sideBarSearch ? <div className="sidebar-search">
+                <h2>Search</h2>
+                <form>
+                    <div class="search-field">
+                        <label for="search">Plant Search</label>
+                        <input type="text" name="search" className="search" placeholder="Common or Latin Name">
+                        </input>
+                        <input type="submit" className="search-btn" value="Search" onClick={(e)=>_handleSearch(e)}></input>
+                    </div>
+                </form>
+            </div> :
+            null
+            }
+            <div className="sidebar-search-tab" onClick={()=>_handleSideBarClick()}> <p>{sideBarSearch ? "<" : ">"}</p> </div>
+            <div className="search-form">
+            <Link to="/">Home</Link>
+                <div>
+                    <h2>Search for Plants</h2>
                 </div>
-                <div className="search-btns">
-                    <div className="search-btn" onClick={()=>_handleAdvanced()}>Advanced Search</div>
-                    <div className="search-btn" onClick={()=>_handleClear()}>Clear Search</div>
-                </div>
-                {advSearchItems.length ? <h3>Advanced Search Criteria</h3> : null}
-                <div className="adv-search-criteria-list">
-                    {advSearchItems.length ? advSearchItems.map((item, key)=>(
-                        <div className="adv-search-criteria-item" key={key}>{item.toLocaleUpperCase()}<span className="cancel" onClick={()=>_handleRemoveSearchCriteria(item)}>X</span></div>
+                <form>
+                    <div class="search-field">
+                        <label for="search">Plant Search</label>
+                        <input type="text" name="search" className="search" placeholder="Common or Latin Name">
+                        </input>
+                        <input type="submit" className="search-btn" value="Search" onClick={(e)=>_handleSearch(e)}></input>
+                    </div>
+                    <div className="search-btns">
+                        <div className="search-btn" onClick={()=>_handleAdvanced()}>Advanced Search</div>
+                        <div className="search-btn" onClick={()=>_handleClear()}>Clear Search</div>
+                    </div>
+                    {advSearchItems.length ? <h3>Advanced Search Criteria</h3> : null}
+                    <div className="adv-search-criteria-list">
+                        {advSearchItems.length ? advSearchItems.map((item, key)=>(
+                            <div className="adv-search-criteria-item" key={key}>{item.toLocaleUpperCase()}<span className="cancel" onClick={()=>_handleRemoveSearchCriteria(item)}>X</span></div>
+                        )):null}
+                    </div>
+                    <div className="advanced-search-hidden" id="advanced-search" hidden={true}>
+                        <h3>Advanced Options</h3>
+                            {Object.keys(searchOptionsObject).map((entry,key)=>(
+                                <fieldset key={key} className="checkbox-container">
+                                    {console.log(entry)}
+                                    <legend>{entry.toUpperCase()}</legend>
+                                    {searchOptionsObject[entry].map((entry, key)=>(
+                                        <div key={key}>
+                                            <input className="hidden-check" type="checkbox" id={entry+`check`} name="area" value={entry}></input>
+                                            <label 
+                                                id={entry} 
+                                                className="checkbox_label" 
+                                                for={entry}
+                                                onClick={()=>_handleCheck(entry)}>{entry.toLocaleUpperCase()}
+                                            </label>
+                                        </div>
+                                    ))}
+                                </fieldset>
+                            ))}
+                        <div className="hide-btn" onClick={()=>_handleHideAdvanced()}>Hide</div>
+                    </div>
+                </form>
+                <div className="results">
+                    {searchResults ? searchResults.map((plant, key)=>(
+                        <InfoCard plant={plant} key={key}/>
                     )):null}
                 </div>
-                <div className="advanced-search-hidden" id="advanced-search" hidden={true}>
-                    <h3>Advanced Options</h3>
-                        {Object.keys(searchOptionsObject).map((entry,key)=>(
-                            <fieldset key={key} className="checkbox-container">
-                                {console.log(entry)}
-                                <legend>{entry.toUpperCase()}</legend>
-                                {searchOptionsObject[entry].map((entry, key)=>(
-                                    <div key={key}>
-                                        <input className="hidden-check" type="checkbox" id={entry+`check`} name="area" value={entry}></input>
-                                        <label 
-                                            id={entry} 
-                                            className="checkbox_label" 
-                                            for={entry}
-                                            onClick={()=>_handleCheck(entry)}>{entry.toLocaleUpperCase()}
-                                        </label>
-                                    </div>
-                                ))}
-                            </fieldset>
-                        ))}
-                    <div className="hide-btn" onClick={()=>_handleHideAdvanced()}>Hide</div>
-                </div>
-            </form>
-            <div className="results">
-                {searchResults ? searchResults.map((plant, key)=>(
-                    <InfoCard plant={plant} key={key}/>
-                )):null}
             </div>
         </div>
     )
