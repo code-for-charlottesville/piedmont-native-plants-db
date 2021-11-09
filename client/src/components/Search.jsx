@@ -62,20 +62,22 @@ export const Search=()=>{
     }
     return (
         <div className="search-display">
-            {sideBarSearch ? <div className="sidebar-search">
-                <h2>Search</h2>
-                <form>
-                    <div class="search-field">
-                        <label for="search">Plant Search</label>
-                        <input type="text" name="search" className="search" placeholder="Common or Latin Name">
-                        </input>
-                        <input type="submit" className="search-btn" value="Search" onClick={(e)=>_handleSearch(e)}></input>
-                    </div>
-                </form>
-            </div> :
-            null
-            }
-            <div className="sidebar-search-tab" onClick={()=>_handleSideBarClick()}> <p>{sideBarSearch ? "<" : ">"}</p> </div>
+            <div className="sliding-search">
+                {sideBarSearch ? <div className="sidebar-search">
+                    <h2>Search</h2>
+                    <form>
+                        <div class="search-field">
+                            <label for="search">Plant Search</label>
+                            <input type="text" name="search" className="search" placeholder="Common or Latin Name">
+                            </input>
+                            <input type="submit" className="search-btn" value="Search" onClick={(e)=>_handleSearch(e)}></input>
+                        </div>
+                    </form>
+                </div> :
+                null
+                }
+                <div className="sidebar-search-tab" onClick={()=>_handleSideBarClick()}> <p>{sideBarSearch ? "<" : ">"}</p> </div>
+            </div>
             <div className="search-form">
             <Link to="/">Home</Link>
                 <div>
@@ -87,6 +89,58 @@ export const Search=()=>{
                         <input type="text" name="search" className="search" placeholder="Common or Latin Name">
                         </input>
                         <input type="submit" className="search-btn" value="Search" onClick={(e)=>_handleSearch(e)}></input>
+                    </div>
+                    <div className="toplevel-search">
+                        {Object.keys(searchOptionsObject.main).map((entry,key)=>(
+                                <fieldset key={key} className="checkbox-container">
+                                    {console.log(entry)}
+                                    <legend>{entry.toUpperCase()}</legend>
+                                    {searchOptionsObject.main[entry].map((entry, key)=>(
+                                        <div key={key}>
+                                            <input className="hidden-check" type="checkbox" id={entry+`check`} name="area" value={entry}></input>
+                                            <label 
+                                                id={entry} 
+                                                className="checkbox_label" 
+                                                for={entry}
+                                                onClick={()=>_handleCheck(entry)}>{entry.toLocaleUpperCase()}
+                                            </label>
+                                        </div>
+                                    ))}
+                                </fieldset>
+                            ))}
+                        </div>
+                    <div className="dropdown-advanced-search">
+                    <div>Advanced Options</div>
+                        {Object.keys(searchOptionsObject).map((entry, key)=>(
+                            entry === "main" ? null :
+                                <div key={key}>
+                                    <div className="advanced-header">{searchOptionsObject[entry].name}
+                                        <span className="down-arrow">{"^"}</span>
+                                    </div>
+                                    <div className="selection-boxes">
+                                    {Object.keys(searchOptionsObject[entry]).map((subsection, key2)=>(
+                                        
+                                        subsection === "name" ? null : 
+                                        <div>
+                                        <div>{subsection}</div>
+                                        {searchOptionsObject[entry][subsection].map((category, key3)=>(
+                                        <div>
+                                        {console.log(subsection)}
+                                            
+                                            <div key={key3}>
+                                                <input className="hidden-check" type="checkbox" id={category+'check'}></input>
+                                                <label 
+                                                    id={category}
+                                                    className="dropdown-check-label"
+                                                    for={category}
+                                                    >{category}</label>
+                                            </div>
+                                        </div>                                        ))}</div>
+                                    ))}
+                                    </div>
+                                </div>
+                                
+                        ))}
                     </div>
                     <div className="search-btns">
                         <div className="search-btn" onClick={()=>_handleAdvanced()}>Advanced Search</div>
@@ -100,11 +154,11 @@ export const Search=()=>{
                     </div>
                     <div className="advanced-search-hidden" id="advanced-search" hidden={true}>
                         <h3>Advanced Options</h3>
-                            {Object.keys(searchOptionsObject).map((entry,key)=>(
+                            {Object.keys(searchOptionsObject.main).map((entry,key)=>(
                                 <fieldset key={key} className="checkbox-container">
                                     {console.log(entry)}
                                     <legend>{entry.toUpperCase()}</legend>
-                                    {searchOptionsObject[entry].map((entry, key)=>(
+                                    {searchOptionsObject.main[entry].map((entry, key)=>(
                                         <div key={key}>
                                             <input className="hidden-check" type="checkbox" id={entry+`check`} name="area" value={entry}></input>
                                             <label 
