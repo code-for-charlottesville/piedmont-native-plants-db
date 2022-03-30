@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 //might want to include plant color within the plant object?
 //need weather/climate information underwhic the plant thrives
 //natural habitat? a specific field for it
-export default function PlantCard({ plant }) {
+export default function PlantCard({ plant, onClick }) {
   const extractBloomMonths = (plant) => {
     const bloom = plant.bloom_months;
     const startMonth = bloom.indexOf("1");
@@ -26,11 +26,14 @@ export default function PlantCard({ plant }) {
   };
 
   return (
-    <div className="bg-gray-100 p-2 shadow-md rounded my-1">
+    <div
+      onClick={onClick}
+      className="bg-gray-100 p-2 cursor-pointer  shadow-md hover:shadow-lg rounded my-1"
+    >
       <h1>
         <div className="flex justify-start">
           <img
-            className="inline-block rounded"
+            className="inline-block rounded object-none"
             src={"https://picsum.photos/seed/picsum/175"}
           />
           <div className="px-5">

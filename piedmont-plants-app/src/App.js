@@ -8,11 +8,12 @@ import {
 } from "react-router-dom";
 import Home from "./pages/HomePage";
 import About from "./pages/AboutPage";
+import PlantDetailsPage from "./pages/PlantDetailsPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 function Navbar() {
   return (
-    <div className="w-full bg-gray-100">
+    <div className="w-full bg-gray-100 mb-2.5">
       <nav className="flex items-end m-auto w-3/4 gap-12 py-3 font-medium">
         <div className="text-2xl font-light">
           <FontAwesomeIcon className="pr-2.5 text-green-700" icon={faLeaf} />
@@ -36,6 +37,7 @@ function App() {
         <div className="m-auto w-3/4">
           <Routes>
             <Route path="/about" element={<About />} />
+            <Route path="/plant/:id" element={<PlantDetailsPage />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
