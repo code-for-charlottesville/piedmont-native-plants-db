@@ -1,22 +1,8 @@
 services:
   api:
     container_name: api
-    image: akh4rf/plants-backend:1.0.0
-    build:
-      dockerfile: Dockerfile
-      context: ./backend
-    volumes:
-      - ./backend:/app
-    ports:
-      - "4000:4000"
+    image: akh4rf/plants-backend:latest
 
   client:
     container_name: client
-    image: akh4rf/plants-frontend:1.0.0
-    build:
-      dockerfile: Dockerfile
-      context: ./frontend
-    volumes:
-      - ./frontend:/app
-    ports:
-      - "3000:3000"
+    image: akh4rf/plants-frontend:latest

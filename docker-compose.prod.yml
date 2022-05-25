@@ -1,0 +1,10 @@
+services:
+  api:
+    restart: always
+    ports:
+      - "4000:4000"
+
+  client:
+    restart: always
+    ports:
+      - "3000:80"
