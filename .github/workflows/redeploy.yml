@@ -1,0 +1,20 @@
+name: Redeploy
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Stage
+      id: deploy
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://150.136.4.129:9000/hooks/plants-app-redeploy'
+        method: 'GET'
+    - name: Show Response
+      run: |
+        echo ${{ steps.deploy.outputs.response }}
