@@ -7,6 +7,7 @@ import {
   NavLink,
 } from "react-router-dom";
 import Home from "./pages/HomePage";
+import Landing from "./pages/LandingPage";
 import About from "./pages/AboutPage";
 import PlantDetailsPage from "./pages/PlantDetailsPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +18,7 @@ function Navbar() {
       <nav className="flex items-end m-auto w-3/4 gap-12 py-3 font-medium">
         <div className="text-2xl font-light">
           <FontAwesomeIcon className="pr-2.5 text-green-700" icon={faLeaf} />
-          Piedmont Plants Database
+          Piedmont Virginia Native Plant Database
         </div>
         <div className="text-md">
           <Link to="/">Home</Link>
@@ -38,7 +39,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/plant/:id" element={<PlantDetailsPage />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Landing />} />
           </Routes>
         </div>
       </Router>
