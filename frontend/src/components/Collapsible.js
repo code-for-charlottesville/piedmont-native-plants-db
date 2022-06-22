@@ -20,7 +20,7 @@ export default function Collapsible({ children, title, className }) {
               />
             </div>
           </Disclosure.Button>
-          <Disclosure.Panel className="p-2">{children}</Disclosure.Panel>
+          <Disclosure.Panel>{children}</Disclosure.Panel>
         </>
       )}
     </Disclosure>
