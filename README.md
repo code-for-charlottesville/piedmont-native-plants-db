@@ -5,12 +5,12 @@ Code for Charlottesville version of Piedmont Native Plants DB
 Below describes how to get the web application running for development
 
 ## Running Frontend
-`cd ./frontend`
-`npm run start`
+- `cd ./frontend`
+- `npm run start`
 
 ## Running API
-`cd ./backend`
-`npm run start`
+- `cd ./backend`
+- `npm run start`
 
 ---
 # Setup
