@@ -7,8 +7,8 @@ export default function PlantDetailsPage() {
   const { id } = useParams();
   const [plant, setPlant] = useState();
 
-  useEffect(() => {
-    setPlant(getPlant(id));
+  useEffect(async () => {
+    setPlant(await getPlant(id));
   }, []);
   return (
     <div className="w-full flex">

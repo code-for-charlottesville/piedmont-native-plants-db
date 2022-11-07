@@ -11,16 +11,22 @@ import About from "./pages/AboutPage";
 import PlantDetailsPage from "./pages/PlantDetailsPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+import SearchPage from "./pages/SearchPage";
 function Navbar() {
   return (
     <div className="w-full bg-gray-100 mb-2.5">
       <nav className="flex items-end m-auto w-3/4 gap-12 py-3 font-medium">
         <div className="text-2xl font-light">
-          <FontAwesomeIcon className="pr-2.5 text-green-700" icon={faLeaf} />
-          Piedmont Plants Database
+          <Link to="/">
+            <FontAwesomeIcon className="pr-2.5 text-green-700" icon={faLeaf} />
+            Piedmont Virginia Native Plant Database
+          </Link>
         </div>
         <div className="text-md">
           <Link to="/">Home</Link>
+        </div>
+        <div className="text-md">
+          <Link to="/search">Search</Link>
         </div>
         <div className="text-md">
           <Link to="/about">About</Link>
@@ -36,9 +42,10 @@ function App() {
         <Navbar />
         <div className="m-auto w-3/4">
           <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/plant/:id" element={<PlantDetailsPage />} />
             <Route path="/" element={<Home />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/plant/:id" element={<PlantDetailsPage />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
       </Router>
