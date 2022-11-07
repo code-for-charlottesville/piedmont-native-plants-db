@@ -7,12 +7,11 @@ import {
   NavLink,
 } from "react-router-dom";
 import Home from "./pages/HomePage";
-import Landing from "./pages/LandingPage";
 import About from "./pages/AboutPage";
 import PlantDetailsPage from "./pages/PlantDetailsPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
-import LandingPage from "./pages/LandingPage";
+import SearchPage from "./pages/SearchPage";
 function Navbar() {
   return (
     <div className="w-full bg-gray-100 mb-2.5">
@@ -25,6 +24,9 @@ function Navbar() {
         </div>
         <div className="text-md">
           <Link to="/">Home</Link>
+        </div>
+        <div className="text-md">
+          <Link to="/search">Search</Link>
         </div>
         <div className="text-md">
           <Link to="/about">About</Link>
@@ -40,10 +42,10 @@ function App() {
         <Navbar />
         <div className="m-auto w-3/4">
           <Routes>
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/search" element={<SearchPage />} />
             <Route path="/plant/:id" element={<PlantDetailsPage />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
       </Router>
