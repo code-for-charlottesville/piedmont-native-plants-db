@@ -12,6 +12,11 @@ Below describes how to get the web application running for development
 - `cd ./backend`
 - `npm run start`
 
+# Development Setup with Docker
+- Make sure Docker Desktop is installed
+- Run `docker compose build` in root directroy
+- Run `docker compose start` to run the application containers
+
 ---
 # Setup
 - Make sure to download Docker
