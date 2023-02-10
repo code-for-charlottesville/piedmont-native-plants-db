@@ -346,7 +346,7 @@ export default function LandingPage() {
 
       <Link
         className="inline-block p-2 bg-green-600 text-white font-medium rounded my-2"
-        to="/home"
+        to="/"
       >
         Show ALL Plants
       </Link>
