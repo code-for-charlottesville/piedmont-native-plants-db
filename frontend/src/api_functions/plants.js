@@ -1,6 +1,6 @@
 const baseURL = "http://localhost:4000/plants";
 export async function getAllPlants() {
-  const plants = await fetch(`${baseURL}/all`)
+  const plants = await fetch(`${baseURL}/`)
     .then((response) => {
       return response.json();
     })

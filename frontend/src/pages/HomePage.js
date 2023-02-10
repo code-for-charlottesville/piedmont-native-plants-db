@@ -175,7 +175,7 @@ export default function HomePage() {
 
   return (
     <div className="flex gap-2">
-      <FilterBar {...{ setPlants }} />
+      {/* <FilterBar {...{ setPlants }} /> */}
       <div>
         <h1 className="text-2xl pb-2.5 font-medium">Plants</h1>
         <PlantList plants={plantsData} />
