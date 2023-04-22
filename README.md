@@ -1,6 +1,23 @@
 # piedmont-native-plants-db
 Code for Charlottesville version of Piedmont Native Plants DB
 
+# Development Setup
+Below describes how to get the web application running for development
+
+## Running Frontend
+- `cd ./frontend`
+- `npm run start`
+
+## Running API
+- `cd ./backend`
+- `npm run start`
+
+# Development Setup with Docker
+- Make sure Docker Desktop is installed
+- Run `docker compose build` in root directroy
+- Run `docker compose start` to run the application containers
+
+---
 # Setup
 - Make sure to download Docker
 
