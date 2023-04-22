@@ -4,10 +4,12 @@ const QueryPromise = require("../database/dbService");
 
 /* POST new DB entry form */
 router.post("/entry", (req, res, next) => {
-    // Split the entries object into its individual parts
+    // Take the values from the request body and put them into an array
+    // This will make writing the DB query easier because the array is already made
+    const requestValues = Object.values(req.body);
 
     // INSERT INTO request_forms (columns from request form table) VALUES (entries object parts)
-    QueryPromise("")
+    QueryPromise("INSERT INTO db_edit_requests SET ?", [requestValues])
         .then((results) => {
             res.send(results);
         })

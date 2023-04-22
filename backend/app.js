@@ -8,6 +8,7 @@ const cors = require("cors");
 
 var indexRouter = require("./routes/index");
 var plantsRouter = require("./routes/plants");
+var editRequestsRouter = require("./routes/editRequests");
 
 var app = express();
 app.use(cors());
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/plants", plantsRouter);
+app.use("/edit-requests", editRequestsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -40,5 +42,11 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
+// MUST REMOVE BEFORE MERGING WITH MAIN
+app.listen(5020, () => {
+  console.log("Server listening on port 5020")
+})
+
 
 module.exports = app;
