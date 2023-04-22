@@ -19,7 +19,17 @@ router.post("/entry", (req, res, next) => {
 
 /* POST new DB edit request form */
 router.post("/edit", (req, res, next) => {
-    
+
+    //collect data from req.body
+
+    // INSERT INTO request_forms (columns from update request form table) VALUES (entries)
+    QueryPromise("")
+        .then((results) => {
+            res.send(results);
+        })
+        .catch((err) => {
+            res.send(err);
+        })
 })
 
 module.exports = router;
