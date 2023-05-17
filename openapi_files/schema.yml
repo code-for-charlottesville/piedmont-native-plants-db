@@ -1,0 +1,1087 @@
+openapi: 3.0.3
+info:
+  title: ''
+  version: 0.0.0
+paths:
+  /api/identifiers/:
+    get:
+      operationId: plant_ident_list
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: query
+        name: common_name__icontains
+        schema:
+          type: string
+      - in: query
+        name: common_name__iexact
+        schema:
+          type: string
+      - in: query
+        name: latin_name__icontains
+        schema:
+          type: string
+      - in: query
+        name: latin_name__iexact
+        schema:
+          type: string
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedPlantIdentifierList'
+          description: ''
+    post:
+      operationId: plant_ident_create
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+  /api/identifiers/{id}/:
+    get:
+      operationId: plant_ident_retrieve
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+    put:
+      operationId: plant_ident_update
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+    patch:
+      operationId: plant_ident_partial_update
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantIdentifier'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantIdentifier'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantIdentifier'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+    delete:
+      operationId: plant_ident_destroy
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/information/:
+    get:
+      operationId: plant_inf_list
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: query
+        name: bloom_end
+        schema:
+          type: string
+          enum:
+          - Apr
+          - Aug
+          - Dec
+          - Feb
+          - Jan
+          - Jul
+          - Jun
+          - Mar
+          - May
+          - Nil
+          - Nov
+          - Oct
+          - Sep
+        description: |-
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+      - in: query
+        name: bloom_start
+        schema:
+          type: string
+          enum:
+          - Apr
+          - Aug
+          - Dec
+          - Feb
+          - Jan
+          - Jul
+          - Jun
+          - Mar
+          - May
+          - Nil
+          - Nov
+          - Oct
+          - Sep
+        description: |-
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+      - in: query
+        name: height_max
+        schema:
+          type: number
+      - in: query
+        name: height_max__gt
+        schema:
+          type: number
+      - in: query
+        name: height_max__lt
+        schema:
+          type: number
+      - in: query
+        name: height_min
+        schema:
+          type: number
+      - in: query
+        name: height_min__gt
+        schema:
+          type: number
+      - in: query
+        name: height_min__lt
+        schema:
+          type: number
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedPlantInformationList'
+          description: ''
+    post:
+      operationId: plant_inf_create
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+  /api/information/{id}/:
+    get:
+      operationId: plant_inf_retrieve
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+    put:
+      operationId: plant_inf_update
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+    patch:
+      operationId: plant_inf_partial_update
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantInformation'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+    delete:
+      operationId: plant_inf_destroy
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/plants/:
+    get:
+      operationId: plant_list
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: query
+        name: datetime_added
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: datetime_added__day
+        schema:
+          type: number
+      - in: query
+        name: datetime_added__gt
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: datetime_added__hour
+        schema:
+          type: number
+      - in: query
+        name: datetime_added__in
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        description: Multiple values may be separated by commas.
+        explode: false
+        style: form
+      - in: query
+        name: datetime_added__lt
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: datetime_added__month
+        schema:
+          type: number
+      - in: query
+        name: datetime_added__year
+        schema:
+          type: number
+      - in: query
+        name: description__icontains
+        schema:
+          type: string
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedPlantList'
+          description: ''
+    post:
+      operationId: plant_create
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Plant'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+  /api/plants/{id}/:
+    get:
+      operationId: plant_retrieve
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+    put:
+      operationId: plant_update
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Plant'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+    patch:
+      operationId: plant_partial_update
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedPlant'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedPlant'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedPlant'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+    delete:
+      operationId: plant_destroy
+      description: "\n        Uses AdminOrReadOnly Permissions: \n            (user.is_staff\
+        \ == True)  => ['__all__']\n            (user.is_staff == False) => ['list',\
+        \ 'retrieve']\n        "
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/schema/:
+    get:
+      operationId: api_schema_retrieve
+      description: |-
+        OpenApi3 schema for this API. Format can be selected via content negotiation.
+
+        - YAML: application/vnd.oai.openapi
+        - JSON: application/vnd.oai.openapi+json
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - json
+          - yaml
+      - in: query
+        name: lang
+        schema:
+          type: string
+          enum:
+          - af
+          - ar
+          - ar-dz
+          - ast
+          - az
+          - be
+          - bg
+          - bn
+          - br
+          - bs
+          - ca
+          - ckb
+          - cs
+          - cy
+          - da
+          - de
+          - dsb
+          - el
+          - en
+          - en-au
+          - en-gb
+          - eo
+          - es
+          - es-ar
+          - es-co
+          - es-mx
+          - es-ni
+          - es-ve
+          - et
+          - eu
+          - fa
+          - fi
+          - fr
+          - fy
+          - ga
+          - gd
+          - gl
+          - he
+          - hi
+          - hr
+          - hsb
+          - hu
+          - hy
+          - ia
+          - id
+          - ig
+          - io
+          - is
+          - it
+          - ja
+          - ka
+          - kab
+          - kk
+          - km
+          - kn
+          - ko
+          - ky
+          - lb
+          - lt
+          - lv
+          - mk
+          - ml
+          - mn
+          - mr
+          - ms
+          - my
+          - nb
+          - ne
+          - nl
+          - nn
+          - os
+          - pa
+          - pl
+          - pt
+          - pt-br
+          - ro
+          - ru
+          - sk
+          - sl
+          - sq
+          - sr
+          - sr-latn
+          - sv
+          - sw
+          - ta
+          - te
+          - tg
+          - th
+          - tk
+          - tr
+          - tt
+          - udm
+          - uk
+          - ur
+          - uz
+          - vi
+          - zh-hans
+          - zh-hant
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/vnd.oai.openapi:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/yaml:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/vnd.oai.openapi+json:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+components:
+  schemas:
+    BloomEndEnum:
+      enum:
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+      - Nil
+      type: string
+      description: |-
+        * `Jan` - January
+        * `Feb` - February
+        * `Mar` - March
+        * `Apr` - April
+        * `May` - May
+        * `Jun` - June
+        * `Jul` - July
+        * `Aug` - August
+        * `Sep` - September
+        * `Oct` - October
+        * `Nov` - November
+        * `Dec` - December
+        * `Nil` - Not Set
+    BloomStartEnum:
+      enum:
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+      - Nil
+      type: string
+      description: |-
+        * `Jan` - January
+        * `Feb` - February
+        * `Mar` - March
+        * `Apr` - April
+        * `May` - May
+        * `Jun` - June
+        * `Jul` - July
+        * `Aug` - August
+        * `Sep` - September
+        * `Oct` - October
+        * `Nov` - November
+        * `Dec` - December
+        * `Nil` - Not Set
+    PaginatedPlantIdentifierList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=4
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=2
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/PlantIdentifier'
+    PaginatedPlantInformationList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=4
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=2
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/PlantInformation'
+    PaginatedPlantList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=4
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=2
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Plant'
+    PatchedPlant:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        identifier:
+          $ref: '#/components/schemas/PlantIdentifier'
+        info:
+          $ref: '#/components/schemas/PlantInformation'
+        datetime_added:
+          type: string
+          format: date-time
+          readOnly: true
+          default: '2023-05-16T20:55:46.996690Z'
+        description:
+          type: string
+          maxLength: 10240
+    PatchedPlantIdentifier:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        latin_name:
+          type: string
+          maxLength: 128
+        common_name:
+          type: string
+          maxLength: 128
+    PatchedPlantInformation:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        bloom_start:
+          $ref: '#/components/schemas/BloomStartEnum'
+        bloom_end:
+          $ref: '#/components/schemas/BloomEndEnum'
+        height_min:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+        height_max:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+    Plant:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        identifier:
+          $ref: '#/components/schemas/PlantIdentifier'
+        info:
+          $ref: '#/components/schemas/PlantInformation'
+        datetime_added:
+          type: string
+          format: date-time
+          readOnly: true
+          default: '2023-05-16T20:55:46.996690Z'
+        description:
+          type: string
+          maxLength: 10240
+      required:
+      - datetime_added
+      - description
+      - id
+      - identifier
+      - info
+    PlantIdentifier:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        latin_name:
+          type: string
+          maxLength: 128
+        common_name:
+          type: string
+          maxLength: 128
+      required:
+      - common_name
+      - id
+      - latin_name
+      - plant
+    PlantInformation:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        bloom_start:
+          $ref: '#/components/schemas/BloomStartEnum'
+        bloom_end:
+          $ref: '#/components/schemas/BloomEndEnum'
+        height_min:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+        height_max:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+      required:
+      - id
+      - plant
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid

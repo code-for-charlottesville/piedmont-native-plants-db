@@ -1,8 +1,0 @@
-services:
-  api:
-    container_name: api
-    image: akh4rf/plants-backend:latest
-
-  client:
-    container_name: client
-    image: akh4rf/plants-frontend:latest
