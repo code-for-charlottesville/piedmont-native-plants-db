@@ -1,9 +1,0 @@
-.idea
-venv
-.DS_Store
-db.sqlite3
-**/__pycache__/*
-node_modules
-Piedmont-Database.iml
-database_api_client
-.vscode
