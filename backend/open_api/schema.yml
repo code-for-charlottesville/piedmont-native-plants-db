@@ -1,0 +1,1335 @@
+openapi: 3.0.3
+info:
+  title: ''
+  version: 0.0.0
+paths:
+  /api/auth/account/:
+    get:
+      operationId: user_account
+      description: 'Retrieves a user tied to the token header given by `Authorization:
+        Token ''%s''`'
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountResponse'
+          description: ''
+  /api/auth/signin/:
+    post:
+      operationId: user_signin
+      description: Signs the user into the API and returns a token to be used in subsequent
+        requests.
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SignInRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/SignInRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/SignInRequest'
+        required: true
+      security:
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+          description: ''
+  /api/auth/signout/:
+    post:
+      operationId: user_signout
+      description: |-
+        Deletes the current token within the `Authorization` header.
+        Effectively, this logs the user out of the application.
+
+        __Note__: This does not delete _all_ tokens, only the one currently in the header.
+        To delete all tokens (sign the user out of all sessions), one should use `sign_out_all`.
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '204':
+          description: No response body
+  /api/auth/signoutall/:
+    post:
+      operationId: user_signout_all
+      description: |-
+        Deletes all authentication tokens tied to the user.
+        The post request must have a valid token within the `Authorization` header.
+        This is used to specify the user to logout.
+        Effectively, this view logs the user out of all active sessions.
+
+        __Note__: To logout of a _single_ session, one can use the `sign_out` operation.
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '204':
+          description: No response body
+  /api/auth/signup/:
+    post:
+      operationId: user_signup
+      description: Signs the user up for the API and returns a token to be used in
+        subsequent requests.
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SignUpRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/SignUpRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/SignUpRequest'
+        required: true
+      security:
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+          description: ''
+  /api/identifiers/:
+    get:
+      operationId: plant_ident_list
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: query
+        name: common_name__icontains
+        schema:
+          type: string
+      - in: query
+        name: common_name__iexact
+        schema:
+          type: string
+      - in: query
+        name: latin_name__icontains
+        schema:
+          type: string
+      - in: query
+        name: latin_name__iexact
+        schema:
+          type: string
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedPlantIdentifierList'
+          description: ''
+    post:
+      operationId: plant_ident_create
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+        required: true
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+  /api/identifiers/{id}/:
+    get:
+      operationId: plant_ident_retrieve
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+    put:
+      operationId: plant_ident_update
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantIdentifier'
+        required: true
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+    patch:
+      operationId: plant_ident_partial_update
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantIdentifier'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantIdentifier'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantIdentifier'
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantIdentifier'
+          description: ''
+    delete:
+      operationId: plant_ident_destroy
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant identifier.
+        required: true
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '204':
+          description: No response body
+  /api/information/:
+    get:
+      operationId: plant_inf_list
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: query
+        name: bloom_end
+        schema:
+          type: string
+          enum:
+          - Apr
+          - Aug
+          - Dec
+          - Feb
+          - Jan
+          - Jul
+          - Jun
+          - Mar
+          - May
+          - Nil
+          - Nov
+          - Oct
+          - Sep
+        description: |-
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+      - in: query
+        name: bloom_start
+        schema:
+          type: string
+          enum:
+          - Apr
+          - Aug
+          - Dec
+          - Feb
+          - Jan
+          - Jul
+          - Jun
+          - Mar
+          - May
+          - Nil
+          - Nov
+          - Oct
+          - Sep
+        description: |-
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+
+          * `Jan` - January
+          * `Feb` - February
+          * `Mar` - March
+          * `Apr` - April
+          * `May` - May
+          * `Jun` - June
+          * `Jul` - July
+          * `Aug` - August
+          * `Sep` - September
+          * `Oct` - October
+          * `Nov` - November
+          * `Dec` - December
+          * `Nil` - Not Set
+      - in: query
+        name: height_max
+        schema:
+          type: number
+      - in: query
+        name: height_max__gt
+        schema:
+          type: number
+      - in: query
+        name: height_max__lt
+        schema:
+          type: number
+      - in: query
+        name: height_min
+        schema:
+          type: number
+      - in: query
+        name: height_min__gt
+        schema:
+          type: number
+      - in: query
+        name: height_min__lt
+        schema:
+          type: number
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedPlantInformationList'
+          description: ''
+    post:
+      operationId: plant_inf_create
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+  /api/information/{id}/:
+    get:
+      operationId: plant_inf_retrieve
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+    put:
+      operationId: plant_inf_update
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PlantInformation'
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+    patch:
+      operationId: plant_inf_partial_update
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedPlantInformation'
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlantInformation'
+          description: ''
+    delete:
+      operationId: plant_inf_destroy
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant information.
+        required: true
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '204':
+          description: No response body
+  /api/plants/:
+    get:
+      operationId: plant_list
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: query
+        name: datetime_added
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: datetime_added__day
+        schema:
+          type: number
+      - in: query
+        name: datetime_added__gt
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: datetime_added__hour
+        schema:
+          type: number
+      - in: query
+        name: datetime_added__in
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        description: Multiple values may be separated by commas.
+        explode: false
+        style: form
+      - in: query
+        name: datetime_added__lt
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: datetime_added__month
+        schema:
+          type: number
+      - in: query
+        name: datetime_added__year
+        schema:
+          type: number
+      - in: query
+        name: description__icontains
+        schema:
+          type: string
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedPlantList'
+          description: ''
+    post:
+      operationId: plant_create
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Plant'
+        required: true
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+  /api/plants/{id}/:
+    get:
+      operationId: plant_retrieve
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+    put:
+      operationId: plant_update
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Plant'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Plant'
+        required: true
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+    patch:
+      operationId: plant_partial_update
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedPlant'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedPlant'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedPlant'
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+          description: ''
+    delete:
+      operationId: plant_destroy
+      description: "__Uses PrivilegedOrReadOnlyAuthenticated Permissions__: \nIf the\
+        \ user is an admin or staff member, then _all_ operations are available to\
+        \ them; \notherwise, the api defaults to _readonly_ operations. The user must\
+        \ be _authenticated_ in _both_ cases.\n* If the user is privileged (`is_staff\
+        \ or is_superuser == True`), then they can use: __all operations__\n* If the\
+        \ user is not privileged (`is_staff or is_superuser == False`), then they\
+        \ can use: __list__ or __retrieve__ operations"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this plant.
+        required: true
+      tags:
+      - api
+      security:
+      - KnoxTokenAuthentication: []
+      responses:
+        '204':
+          description: No response body
+  /api/schema/:
+    get:
+      operationId: api_schema_retrieve
+      description: |-
+        OpenApi3 schema for this API. Format can be selected via content negotiation.
+
+        - YAML: application/vnd.oai.openapi
+        - JSON: application/vnd.oai.openapi+json
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - json
+          - yaml
+      - in: query
+        name: lang
+        schema:
+          type: string
+          enum:
+          - af
+          - ar
+          - ar-dz
+          - ast
+          - az
+          - be
+          - bg
+          - bn
+          - br
+          - bs
+          - ca
+          - ckb
+          - cs
+          - cy
+          - da
+          - de
+          - dsb
+          - el
+          - en
+          - en-au
+          - en-gb
+          - eo
+          - es
+          - es-ar
+          - es-co
+          - es-mx
+          - es-ni
+          - es-ve
+          - et
+          - eu
+          - fa
+          - fi
+          - fr
+          - fy
+          - ga
+          - gd
+          - gl
+          - he
+          - hi
+          - hr
+          - hsb
+          - hu
+          - hy
+          - ia
+          - id
+          - ig
+          - io
+          - is
+          - it
+          - ja
+          - ka
+          - kab
+          - kk
+          - km
+          - kn
+          - ko
+          - ky
+          - lb
+          - lt
+          - lv
+          - mk
+          - ml
+          - mn
+          - mr
+          - ms
+          - my
+          - nb
+          - ne
+          - nl
+          - nn
+          - os
+          - pa
+          - pl
+          - pt
+          - pt-br
+          - ro
+          - ru
+          - sk
+          - sl
+          - sq
+          - sr
+          - sr-latn
+          - sv
+          - sw
+          - ta
+          - te
+          - tg
+          - th
+          - tk
+          - tr
+          - tt
+          - udm
+          - uk
+          - ur
+          - uz
+          - vi
+          - zh-hans
+          - zh-hant
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/vnd.oai.openapi:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/yaml:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/vnd.oai.openapi+json:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+components:
+  schemas:
+    AccountResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+$
+          maxLength: 150
+        email:
+          type: string
+          format: email
+          title: Email address
+          maxLength: 254
+      required:
+      - id
+      - username
+    BloomEndEnum:
+      enum:
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+      - Nil
+      type: string
+      description: |-
+        * `Jan` - January
+        * `Feb` - February
+        * `Mar` - March
+        * `Apr` - April
+        * `May` - May
+        * `Jun` - June
+        * `Jul` - July
+        * `Aug` - August
+        * `Sep` - September
+        * `Oct` - October
+        * `Nov` - November
+        * `Dec` - December
+        * `Nil` - Not Set
+    BloomStartEnum:
+      enum:
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+      - Nil
+      type: string
+      description: |-
+        * `Jan` - January
+        * `Feb` - February
+        * `Mar` - March
+        * `Apr` - April
+        * `May` - May
+        * `Jun` - June
+        * `Jul` - July
+        * `Aug` - August
+        * `Sep` - September
+        * `Oct` - October
+        * `Nov` - November
+        * `Dec` - December
+        * `Nil` - Not Set
+    PaginatedPlantIdentifierList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=4
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=2
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/PlantIdentifier'
+    PaginatedPlantInformationList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=4
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=2
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/PlantInformation'
+    PaginatedPlantList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=4
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?page=2
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Plant'
+    PatchedPlant:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        identifier:
+          $ref: '#/components/schemas/PlantIdentifier'
+        info:
+          $ref: '#/components/schemas/PlantInformation'
+        datetime_added:
+          type: string
+          format: date-time
+          readOnly: true
+          default: '2023-06-05T21:47:53.450119Z'
+        description:
+          type: string
+          maxLength: 10240
+    PatchedPlantIdentifier:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        latin_name:
+          type: string
+          maxLength: 128
+        common_name:
+          type: string
+          maxLength: 128
+    PatchedPlantInformation:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        bloom_start:
+          $ref: '#/components/schemas/BloomStartEnum'
+        bloom_end:
+          $ref: '#/components/schemas/BloomEndEnum'
+        height_min:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+        height_max:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+    Plant:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        identifier:
+          $ref: '#/components/schemas/PlantIdentifier'
+        info:
+          $ref: '#/components/schemas/PlantInformation'
+        datetime_added:
+          type: string
+          format: date-time
+          readOnly: true
+          default: '2023-06-05T21:47:53.450119Z'
+        description:
+          type: string
+          maxLength: 10240
+      required:
+      - datetime_added
+      - description
+      - id
+      - identifier
+      - info
+    PlantIdentifier:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        latin_name:
+          type: string
+          maxLength: 128
+        common_name:
+          type: string
+          maxLength: 128
+      required:
+      - common_name
+      - id
+      - latin_name
+      - plant
+    PlantInformation:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        plant:
+          type: integer
+          readOnly: true
+        bloom_start:
+          $ref: '#/components/schemas/BloomStartEnum'
+        bloom_end:
+          $ref: '#/components/schemas/BloomEndEnum'
+        height_min:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+        height_max:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,4}(?:\.\d{0,2})?$
+      required:
+      - id
+      - plant
+    SignInRequest:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+      required:
+      - password
+      - username
+    SignUpRequest:
+      type: object
+      properties:
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+$
+          maxLength: 150
+        password:
+          type: string
+          maxLength: 128
+        email:
+          type: string
+          format: email
+      required:
+      - password
+      - username
+    UserResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+$
+          maxLength: 150
+        email:
+          type: string
+          format: email
+          title: Email address
+          maxLength: 254
+        token_key:
+          type: string
+          readOnly: true
+        token_expiry:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+      - id
+      - token_expiry
+      - token_key
+      - username
+  securitySchemes:
+    KnoxTokenAuthentication:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: "This enables token-based authentication through the django knox\
+        \ library.\n* __Example__: `Authorization: Token 6cd0e864497d6c0f7d27...`\n\
+        * __Getting Tokens__: Tokens are returned from [`user_signin`](/api/auth/signin/),\
+        \ [`user_signup`](/api/auth/signup/), and [`user_account`](/api/auth/account/)\n\
+        * __Deleting Tokens__: \n    - Individual tokens can be deleted at [`user_signout`](/api/auth/signout/).\
+        \ \n    (I.e., the user is logged out of the current session.) \n    - All\
+        \ tokens for a user can be cleared at [`user_signout_all`](/api/auth/signoutall/).\
+        \ \n    (I.e., the user is logged out of all sessions.)"
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid
