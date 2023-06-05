@@ -7,3 +7,4 @@ node_modules
 Piedmont-Database.iml
 database_api_client
 .vscode
+*.iml
