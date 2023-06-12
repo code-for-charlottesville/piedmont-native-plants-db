@@ -4,6 +4,6 @@ venv
 db.sqlite3
 **/__pycache__/*
 node_modules
-Piedmont-Database.iml
+piedmont-native-plants-db.iml
 database_api_client
 .vscode
