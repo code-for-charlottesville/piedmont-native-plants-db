@@ -1,6 +1,46 @@
 {% extends 'frontend/components/base.html' %}
 
 {% block content %}
+
+  <section class="card mb-4 mt-4">
+    <div class="card-body">
+      <form method="post">
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+          <div class="alert alert-danger" role="alert">
+            {% for error in form.non_field_errors %}
+              {{ error }}
+            {% endfor %}
+          </div>
+        {% endif %}
+        <div class="form-group mb-3">
+          {% if form.common_name.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.common_name.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_common_name" class="form-label">Common Name</label>
+          <input type="text" id="id_common_name" name="common_name" class="form-control">
+        </div>
+        <div class="form-group mb-3">
+          {% if form.latin_name.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.latin_name.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_latin_name" class="form-label">Latin Name</label>
+          <input type="text" id="id_latin_name" name="latin_name" class="form-control">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+
   {% for plant in plants %}
     <section class="card mb-4 {% if forloop.first %} mt-4 {% endif %}">
       <div class="card-body">
