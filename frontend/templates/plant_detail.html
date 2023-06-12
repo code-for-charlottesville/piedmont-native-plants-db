@@ -1,0 +1,23 @@
+{% extends 'components/base.html' %}
+
+{% block content %}
+  <section class="card mb-4 mt-4">
+    <div class="card-body">
+      <h5 class="card-title">{{ plant.identifier.common_name }}</h5>
+      <div class="mb-2 d-flex justify-content-between">
+        <h6 class="card-subtitle text-muted">{{ plant.identifier.latin_name }}</h6>
+        <h6 class="card-subtitle text-muted">{{ plant.datetime_added }}</h6>
+      </div>
+      <p class="card-text">
+        <hr class="mt-2 mb-2">
+          <b>Description: </b>{{ plant.description }}
+        <hr class="mt-2 mb-2">
+          <b>Bloom Start: </b>{{ plant.info.bloom_start }} <br>
+          <b>Bloom End: </b>{{ plant.info.bloom_end }} <br>
+          <b>Height Range: </b> {{ plant.info.height_min }} - {{ plant.info.height_max }} ft
+
+    </div>
+  </section>
+
+
+{% endblock content %}

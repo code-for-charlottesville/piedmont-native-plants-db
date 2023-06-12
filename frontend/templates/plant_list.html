@@ -2,12 +2,14 @@
 
 {% block content %}
   {% for plant in plants %}
-    <div class="card mb-4 {% if forloop.first %} mt-4 {% endif %}">
+    <section class="card mb-4 {% if forloop.first %} mt-4 {% endif %}">
       <div class="card-body">
-        <h5 class="card-title">{{ plant.identifier.latin_name }}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{ plant.identifier.common_name }}</h6>
+        <h5 class="card-title">
+          <a href="{% url 'frontend:plant_detail' plant.id %}">{{ plant.identifier.common_name }}</a>
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ plant.identifier.latin_name }}</h6>
         <p class="card-text">{{ plant.description }}</p>
       </div>
-    </div>
+    </section>
   {% endfor %}
 {% endblock content %}
