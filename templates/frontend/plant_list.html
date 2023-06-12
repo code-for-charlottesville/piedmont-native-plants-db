@@ -7,8 +7,13 @@
         <h5 class="card-title">
           <a href="{% url 'frontend:plant_detail' plant.id %}">{{ plant.identifier.common_name }}</a>
         </h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{ plant.identifier.latin_name }}</h6>
-        <p class="card-text">{{ plant.description }}</p>
+        <div class="mb-2 d-flex justify-content-between">
+          <h6 class="card-subtitle text-muted">{{ plant.identifier.latin_name }}</h6>
+          <h6 class="card-subtitle text-muted">{{ plant.datetime_added }}</h6>
+        </div>
+        <p class="card-text">
+          <hr class="mt-2 mb-2">
+            <b>Description: </b>{{ plant.description }}
       </div>
     </section>
   {% endfor %}
