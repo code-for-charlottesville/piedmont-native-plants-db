@@ -1,4 +1,3 @@
-from django.http import HttpResponseBadRequest
 from django.shortcuts import render, get_object_or_404
 
 from backend.models import Plant
