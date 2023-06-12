@@ -7,21 +7,21 @@ import backend.views.account_views as account_redo
 
 app_name = 'website'
 urlpatterns = [
-    path('api/auth/signup/', account_redo.SignUp.as_view(), name='signup'),
-    path('api/auth/signin/', account_redo.SignIn.as_view(), name='signin'),
-    path('api/auth/signout/', account_redo.SignOut.as_view(), name='signout'),
-    path('api/auth/signoutall/', account_redo.SignOutAll.as_view(), name='signoutall'),
-    path('api/auth/account/', account_redo.Account.as_view(), name='account'),
+    path('auth/signup/', account_redo.SignUp.as_view(), name='signup'),
+    path('auth/signin/', account_redo.SignIn.as_view(), name='signin'),
+    path('auth/signout/', account_redo.SignOut.as_view(), name='signout'),
+    path('auth/signoutall/', account_redo.SignOutAll.as_view(), name='signoutall'),
+    path('auth/account/', account_redo.Account.as_view(), name='account'),
 
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='website:schema'), name='swagger-ui'),
-    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='website:schema'), name='redoc'),
+    path('schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='website:schema'), name='swagger-ui'),
+    path('schema/redoc/', SpectacularRedocView.as_view(url_name='website:schema'), name='redoc'),
 ]
 
 router = routers.DefaultRouter()
-router.register('api/plants', backend.PlantViewSet, basename='Plants')
-router.register('api/identifiers', backend.PlantIdentifierViewSet, basename='Identifier')
-router.register('api/information', backend.PlantInformationViewSet, basename='Information')
+router.register('plants', backend.PlantViewSet, basename='Plants')
+router.register('identifiers', backend.PlantIdentifierViewSet, basename='Identifier')
+router.register('information', backend.PlantInformationViewSet, basename='Information')
 
 
 urlpatterns += router.urls
