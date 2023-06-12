@@ -147,3 +147,6 @@ AUTH_USER_MODEL = 'auth.User'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
+
+LOGIN_URL = 'frontend:login'
+LOGIN_REDIRECT_URL = 'frontend:home'
