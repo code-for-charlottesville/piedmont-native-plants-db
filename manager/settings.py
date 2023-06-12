@@ -150,3 +150,4 @@ AUTHENTICATION_BACKENDS = (
 
 LOGIN_URL = 'frontend:login'
 LOGIN_REDIRECT_URL = 'frontend:home'
+LOGOUT_REDIRECT_URL = 'frontend:home'
