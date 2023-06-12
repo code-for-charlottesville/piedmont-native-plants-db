@@ -99,7 +99,7 @@ class TestAccountViews(TestCase):
     def test_signout__single_token(self):
         token, key = AuthToken.objects.create(user=self.user)
         self.set_client_credentials(key)
-        response = self.client.post(path=reverse('website:signout'))
+        response = self.client.post(path=reverse('backend:signout'))
         self.assertEquals(0, len(AuthToken.objects.all()))
         self.assertEquals(status.HTTP_204_NO_CONTENT, response.status_code)
 
@@ -107,7 +107,7 @@ class TestAccountViews(TestCase):
         token1, key1 = AuthToken.objects.create(user=self.user)
         token2, key2 = AuthToken.objects.create(user=self.user)
         self.set_client_credentials(key1)
-        response = self.client.post(path=reverse('website:signout'))
+        response = self.client.post(path=reverse('backend:signout'))
         self.assertIsNotNone(AuthToken.objects.get(pk=token2.pk))
         self.assertRaises(AuthToken.DoesNotExist, AuthToken.objects.get, pk=token1.pk)
         self.assertEquals(status.HTTP_204_NO_CONTENT, response.status_code)
@@ -115,7 +115,7 @@ class TestAccountViews(TestCase):
     def test_signout__invalid_token(self):
         token1, key1 = AuthToken.objects.create(user=self.user)
         self.set_client_credentials('InvalidToken')
-        response = self.client.post(path=reverse('website:signout'))
+        response = self.client.post(path=reverse('backend:signout'))
         self.assertIsNotNone(AuthToken.objects.get(pk=token1.pk))
         self.assertEquals(status.HTTP_401_UNAUTHORIZED, response.status_code)
 
@@ -123,7 +123,7 @@ class TestAccountViews(TestCase):
     def test_signoutall__single_token(self):
         token, key = AuthToken.objects.create(user=self.user)
         self.set_client_credentials(key)
-        response = self.client.post(path=reverse('website:signoutall'))
+        response = self.client.post(path=reverse('backend:signoutall'))
         self.assertRaises(AuthToken.DoesNotExist, AuthToken.objects.get, pk=token.pk)
         self.assertEquals(status.HTTP_204_NO_CONTENT, response.status_code)
 
@@ -131,7 +131,7 @@ class TestAccountViews(TestCase):
         token1, key1 = AuthToken.objects.create(user=self.user)
         token2, key2 = AuthToken.objects.create(user=self.user)
         self.set_client_credentials(key1)
-        response = self.client.post(path=reverse('website:signoutall'))
+        response = self.client.post(path=reverse('backend:signoutall'))
         self.assertRaises(AuthToken.DoesNotExist, AuthToken.objects.get, pk=token1.pk)
         self.assertRaises(AuthToken.DoesNotExist, AuthToken.objects.get, pk=token2.pk)
         self.assertEquals(status.HTTP_204_NO_CONTENT, response.status_code)
@@ -139,7 +139,7 @@ class TestAccountViews(TestCase):
     def test_signoutall__invalid_token(self):
         token1, key1 = AuthToken.objects.create(user=self.user)
         self.set_client_credentials('InvalidToken')
-        response = self.client.post(path=reverse('website:signoutall'))
+        response = self.client.post(path=reverse('backend:signoutall'))
         self.assertIsNotNone(AuthToken.objects.get(pk=token1.pk))
         self.assertEquals(status.HTTP_401_UNAUTHORIZED, response.status_code)
 
@@ -147,21 +147,21 @@ class TestAccountViews(TestCase):
     def test_account__valid_token(self):
         token, key = AuthToken.objects.create(user=self.user)
         self.set_client_credentials(key)
-        response = self.client.get(path=reverse('website:account'))
+        response = self.client.get(path=reverse('backend:account'))
         self.assertTrue('id' in response.data)
         self.assertUser(TestUser, response.data, 'email', 'username')
         self.assertEquals(status.HTTP_200_OK, response.status_code)
 
     def test_account__invalid_token(self):
         self.set_client_credentials('InvalidToken')
-        response = self.client.get(path=reverse('website:account'))
+        response = self.client.get(path=reverse('backend:account'))
         self.assertNoneIn(response.data, 'id', 'email', 'username')
         self.assertEquals(status.HTTP_401_UNAUTHORIZED, response.status_code)
 
     # View: SignUp
     def test_signup__valid_credentials(self):
         response = self.client.post(
-            path=reverse('website:signup'),
+            path=reverse('backend:signup'),
             data=assemble_payload(TestCreateUser, 'username', 'password', 'email')
         )
         self.assertAllIn(response.data, 'token_key', 'token_expiry', 'id', 'username', 'email')
@@ -171,7 +171,7 @@ class TestAccountViews(TestCase):
 
     def test_signup__invalid_credentials_duplicate_username(self):
         response = self.client.post(
-            path=reverse('website:signup'),
+            path=reverse('backend:signup'),
             data=assemble_payload(TestCreateUserSameName, 'username', 'password', 'email')
         )
         self.assertNoneIn(response.data, 'token_key', 'token_expiry', 'id', 'email')
@@ -189,7 +189,7 @@ class TestAccountViews(TestCase):
     def test_signin__valid_credentials(self):
         self.assertIsNone(self.user.last_login)
         response = self.client.post(
-            path=reverse('website:signin'),
+            path=reverse('backend:signin'),
             data=assemble_payload(TestUser, 'username', 'password')
         )
         self.refresh_user()

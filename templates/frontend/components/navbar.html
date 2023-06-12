@@ -12,10 +12,13 @@
           <a class="nav-link" href="{% url 'frontend:home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="{% url 'frontend:plant_list' %}">Browse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'frontend:plant_list' %}">Browse</a>
+          <a class="nav-link" href="{% url 'backend:api-root' %}">API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>

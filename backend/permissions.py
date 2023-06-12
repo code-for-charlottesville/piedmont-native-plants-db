@@ -1,7 +1,6 @@
 from django.urls import reverse
 from drf_spectacular.extensions import OpenApiAuthenticationExtension
 from rest_framework import permissions
-from knox.auth import TokenAuthentication
 from rest_framework.utils.formatting import dedent
 
 '''This file defines permission classes to be used in the API views'''
@@ -44,17 +43,17 @@ class KnoxTokenAuthentication(OpenApiAuthenticationExtension):
 
     @staticmethod
     def __get_token_producing_urls__():
-        return f'[`user_signin`]({reverse("website:signin")}), '\
-               f'[`user_signup`]({reverse("website:signup")}), and '\
-               f'[`user_account`]({reverse("website:account")})'
+        return f'[`user_signin`]({reverse("backend:signin")}), '\
+               f'[`user_signup`]({reverse("backend:signup")}), and '\
+               f'[`user_account`]({reverse("backend:account")})'
 
     @staticmethod
     def __get_logout_url():
-        return f'[`user_signout`]({reverse("website:signout")})'
+        return f'[`user_signout`]({reverse("backend:signout")})'
 
     @staticmethod
     def __get_logoutall_url():
-        return f'[`user_signout_all`]({reverse("website:signoutall")})'
+        return f'[`user_signout_all`]({reverse("backend:signoutall")})'
 
     def get_security_definition(self, auto_schema):
         return {

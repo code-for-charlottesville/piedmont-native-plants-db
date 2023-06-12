@@ -5,7 +5,7 @@ from rest_framework import routers
 import backend.views as backend
 import backend.views.account_views as account_redo
 
-app_name = 'website'
+app_name = 'backend'
 urlpatterns = [
     path('auth/signup/', account_redo.SignUp.as_view(), name='signup'),
     path('auth/signin/', account_redo.SignIn.as_view(), name='signin'),
@@ -14,14 +14,13 @@ urlpatterns = [
     path('auth/account/', account_redo.Account.as_view(), name='account'),
 
     path('schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='website:schema'), name='swagger-ui'),
-    path('schema/redoc/', SpectacularRedocView.as_view(url_name='website:schema'), name='redoc'),
+    path('schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='backend:schema'), name='swagger'),
+    path('schema/redoc/', SpectacularRedocView.as_view(url_name='backend:schema'), name='redoc'),
 ]
 
 router = routers.DefaultRouter()
 router.register('plants', backend.PlantViewSet, basename='Plants')
 router.register('identifiers', backend.PlantIdentifierViewSet, basename='Identifier')
 router.register('information', backend.PlantInformationViewSet, basename='Information')
-
 
 urlpatterns += router.urls
