@@ -7,3 +7,7 @@ body {
 main {
     flex: 1;
 }
+
+.navbar .nav-link {
+    font-weight: bold;
+}
