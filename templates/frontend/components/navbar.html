@@ -14,8 +14,16 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'frontend:plant_list' %}">Browse</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'backend:api-root' %}">API</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            API
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url 'backend:api-root' %}">API Root</a></li>
+            <li><a class="dropdown-item" href="{% url 'backend:redoc' %}">Redoc Documentation</a></li>
+            <li><a class="dropdown-item" href="{% url 'backend:swagger' %}">Swagger Documentation</a></li>
+            <!-- Add more dropdown options as needed -->
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
