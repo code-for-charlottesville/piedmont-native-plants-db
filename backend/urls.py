@@ -1,15 +1,12 @@
-import knox.views
-from django.urls import path, include
+from django.urls import path
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 from rest_framework import routers
 
 import backend.views as backend
-from backend.views import *
 import backend.views.account_views as account_redo
 
 app_name = 'website'
 urlpatterns = [
-    path('', backend.detail, name='home'),
     path('api/auth/signup/', account_redo.SignUp.as_view(), name='signup'),
     path('api/auth/signin/', account_redo.SignIn.as_view(), name='signin'),
     path('api/auth/signout/', account_redo.SignOut.as_view(), name='signout'),

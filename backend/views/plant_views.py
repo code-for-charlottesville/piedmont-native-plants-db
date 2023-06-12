@@ -6,10 +6,6 @@ from backend.permissions import PrivilegedOrReadOnlyAuthenticated
 from backend.serializers import *
 
 
-def detail(request):
-    return HttpResponse("This is a test page.")
-
-
 '''
     API Views:
         @extend_schema_view(

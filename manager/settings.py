@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Basic
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,12 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Apps
     'backend.apps.BackendConfig',
     'frontend.apps.FrontendConfig',
+
+    # Project-Specific Libraries
     'rest_framework',
     'django_filters',
     'drf_spectacular',
-    'knox'
+    'knox',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
