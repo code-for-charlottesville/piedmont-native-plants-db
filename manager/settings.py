@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'backend.apps.BackendApiConfig',
+    'backend.apps.BackendConfig',
+    'frontend.apps.FrontendConfig',
     'rest_framework',
     'django_filters',
     'drf_spectacular',
