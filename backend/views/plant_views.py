@@ -2,9 +2,10 @@ from django.http import HttpResponse
 from drf_spectacular.utils import extend_schema_view, extend_schema
 from knox.auth import TokenAuthentication
 from rest_framework import viewsets
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
+
 from backend.permissions import PrivilegedOrReadOnlyAuthenticated
 from backend.serializers import *
-
 
 '''
     API Views:
@@ -25,6 +26,7 @@ from backend.serializers import *
             filterset_fields:
                 defines url query parameters for filtering
 '''
+default_authentication_classes = [TokenAuthentication, BasicAuthentication, SessionAuthentication]
 
 
 @extend_schema_view(
@@ -57,7 +59,7 @@ class PlantInformationViewSet(viewsets.ModelViewSet):
     serializer_class = PlantInformationSerializer
     queryset = PlantInformation.objects.all()
     permission_classes = [PrivilegedOrReadOnlyAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    authentication_classes = default_authentication_classes
     filterset_fields = {
         'bloom_start': ['exact'],
         'bloom_end': ['exact'],
@@ -96,7 +98,7 @@ class PlantIdentifierViewSet(viewsets.ModelViewSet):
     serializer_class = PlantIdentifierSerializer
     queryset = PlantIdentifier.objects.all()
     permission_classes = [PrivilegedOrReadOnlyAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    authentication_classes = default_authentication_classes
     filterset_fields = {
         'latin_name': ['icontains', 'iexact'],
         'common_name': ['icontains', 'iexact']
@@ -133,7 +135,7 @@ class PlantViewSet(viewsets.ModelViewSet):
     serializer_class = PlantSerializer
     queryset = Plant.objects.all()
     permission_classes = [PrivilegedOrReadOnlyAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    authentication_classes = default_authentication_classes
     filterset_fields = {
         'datetime_added': ['lt', 'gt', 'exact', 'year', 'month', 'day', 'hour', 'in'],
         'description': ['icontains']

@@ -3,6 +3,7 @@ from django.contrib.auth import login, logout
 from drf_spectacular.utils import extend_schema, OpenApiResponse, OpenApiRequest, inline_serializer
 from knox.auth import TokenAuthentication
 from rest_framework import generics, permissions, status
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
@@ -56,7 +57,7 @@ class Account(generics.GenericAPIView):
     """Retrieves a user tied to the token header given by `Authorization: Token '%s'`"""
     serializer_class = AccountResponseSerializer
     permission_classes = [permissions.IsAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    authentication_classes = [TokenAuthentication, BasicAuthentication, SessionAuthentication]
 
     @extend_schema(operation_id='user_account')
     def get(self, request):
@@ -72,6 +73,7 @@ class SignOut(knox_views.LogoutView):
 
     __Note__: This does not delete _all_ tokens, only the one currently in the header.
     To delete all tokens (sign the user out of all sessions), one should use `sign_out_all`."""
+    authentication_classes = [TokenAuthentication, BasicAuthentication, SessionAuthentication]
 
     @extend_schema(operation_id='user_signout', request=None, responses={204: None})
     def post(self, request, format=None):
@@ -85,6 +87,7 @@ class SignOutAll(knox_views.LogoutAllView):
     Effectively, this view logs the user out of all active sessions.
 
     __Note__: To logout of a _single_ session, one can use the `sign_out` operation."""
+    authentication_classes = [TokenAuthentication, BasicAuthentication, SessionAuthentication]
 
     @extend_schema(operation_id='user_signout_all', request=None, responses={204: None})
     def post(self, request, format=None):
