@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-vls^)nlj7zr20yzzdfv0$-f64+oz2y!rm3b_3okb23bw-)jky9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['piedmontdatabase.herokuapp.com']
+ALLOWED_HOSTS = [
+    'piedmontdatabase.herokuapp.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
