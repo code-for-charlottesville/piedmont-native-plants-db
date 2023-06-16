@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vls^)nlj7zr20yzzdfv0$-f64+oz2y!rm3b_3okb23bw-)jky9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['piedmontdatabase.herokuapp.com']
 
 
 # Application definition
@@ -151,3 +151,17 @@ AUTHENTICATION_BACKENDS = (
 LOGIN_URL = 'frontend:login'
 LOGIN_REDIRECT_URL = 'frontend:home'
 LOGOUT_REDIRECT_URL = 'frontend:home'
+
+try:
+    if 'HEROKU' in os.environ:
+        import django_heroku
+        django_heroku.settings(locals())
+        SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+        SECURE_HSTS_SECONDS = 180
+        SECURE_SSL_REDIRECT = True
+
+        SESSION_COOKIE_SECURE = True
+        CSRF_COOKIE_SECURE = True
+        DEBUG = False
+except ImportError:
+    found = False
