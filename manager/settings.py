@@ -130,8 +130,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# This specifies the url which static files should be accessible at on the server.
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
+# This adds the custom static folder in the project to the Django static search paths.
+STATICFILES_DIRS = [BASE_DIR / 'static']
+# This would be where the static files are pulled from for deployment.
+# `python manage.py collectstatic` would populate the directory with static files from all apps.
+# Heroku automatically handles this by running `collectstatic --noinput` so it is unnecessary to specify here.
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
