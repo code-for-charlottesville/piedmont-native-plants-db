@@ -1,6 +1,6 @@
-from django.utils.timezone import now
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
+
 '''
     This file defines the database models for the application.
     Each object is stored as a set of records (if nested) in database table(s).
@@ -21,40 +21,53 @@ from django.contrib.auth.models import User
 '''
 
 
-class PlantIdentifier(models.Model):
-    latin_name = models.CharField(max_length=128)
-    common_name = models.CharField(max_length=128)
+class MonthChoices(models.TextChoices):
+    JANUARY = 'Jan', 'January'
+    FEBRUARY = 'Feb', 'February'
+    MARCH = 'Mar', 'March'
+    APRIL = 'Apr', 'April'
+    MAY = 'May', 'May'
+    JUNE = 'Jun', 'June'
+    JULY = 'Jul', 'July'
+    AUGUST = 'Aug', 'August'
+    SEPTEMBER = 'Sep', 'September'
+    OCTOBER = 'Oct', 'October'
+    NOVEMBER = 'Nov', 'November'
+    DECEMBER = 'Dec', 'December'
+    NOT_SET = 'Nil', 'Not Set'
 
 
 class PlantInformation(models.Model):
-    MONTHS = [('Jan', 'January'),
-              ('Feb', 'February'),
-              ('Mar', 'March'),
-              ('Apr', 'April'),
-              ('May', 'May'),
-              ('Jun', 'June'),
-              ('Jul', 'July'),
-              ('Aug', 'August'),
-              ('Sep', 'September'),
-              ('Oct', 'October'),
-              ('Nov', 'November'),
-              ('Dec', 'December'),
-              ('Nil', 'Not Set')]
-    bloom_start = models.CharField(choices=MONTHS, max_length=8, default=MONTHS[-1][0])
-    bloom_end = models.CharField(choices=MONTHS, max_length=8, default=MONTHS[-1][0])
+    bloom_start = models.CharField(choices=MonthChoices.choices, max_length=8, default=MonthChoices.NOT_SET)
+    bloom_end = models.CharField(choices=MonthChoices.choices, max_length=8, default=MonthChoices.NOT_SET)
     height_min = models.DecimalField(max_digits=6, decimal_places=2, default=0)
     height_max = models.DecimalField(max_digits=6, decimal_places=2, default=0)
 
 
 class Plant(models.Model):
-    identifier = models.OneToOneField(PlantIdentifier, on_delete=models.CASCADE, related_name='plant')
-    info = models.OneToOneField(PlantInformation, on_delete=models.CASCADE, related_name='plant')
+    common_name = models.CharField(max_length=128)
+    latin_name = models.CharField(max_length=128)
     description = models.CharField(max_length=10240)
-    datetime_added = models.DateTimeField(default=now)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)  # This field automatically changes everytime the model is saved
+    info = models.OneToOneField(PlantInformation, on_delete=models.CASCADE, related_name='plant')
+
+
+class SubmissionStatusChoices(models.TextChoices):
+    NOT_SUBMITTED = 'NIL', 'Not Submitted'
+    APPROVED = 'APP', 'Approved'
+    REJECTED = 'REJ', 'Rejected'
+    PENDING = 'PEN', 'Pending'
 
 
 class EditPlantRecord(models.Model):
-    edited_plant = models.OneToOneField(Plant, related_name='edits', on_delete=models.CASCADE)
-    user = models.ForeignKey(User, related_name='edits', on_delete=models.CASCADE)
+    current_plant = models.ForeignKey(Plant, related_name='edits', on_delete=models.CASCADE)
+    edits = models.JSONField()
+    created_by = models.ForeignKey(User, related_name='plant_edits', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
-    comments = models.CharField(max_length=1600, blank=True)
+    comments = models.CharField(max_length=800, blank=True)
+    submission_status = models.CharField(
+        choices=SubmissionStatusChoices.choices,
+        max_length=3,
+        default=SubmissionStatusChoices.NOT_SUBMITTED
+    )
