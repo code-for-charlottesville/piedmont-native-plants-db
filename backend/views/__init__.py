@@ -1,2 +1,2 @@
-from .plant_views import *
-from .account_views import *
+from .api_plant_views import *
+from .api_account_views import *

@@ -3,7 +3,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 from rest_framework import routers
 
 import backend.views as backend
-import backend.views.account_views as account_redo
+import backend.views.api_account_views as account_redo
 
 app_name = 'backend'
 urlpatterns = [
