@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from drf_spectacular.utils import extend_schema_view, extend_schema
 from knox.auth import TokenAuthentication
 from rest_framework import viewsets
@@ -70,43 +69,6 @@ class PlantInformationViewSet(viewsets.ModelViewSet):
 
 @extend_schema_view(
     create=extend_schema(
-        operation_id='plant_ident_create',
-        description=PrivilegedOrReadOnlyAuthenticated.get_description()
-    ),
-    list=extend_schema(
-        operation_id='plant_ident_list',
-        description=PrivilegedOrReadOnlyAuthenticated.get_description()
-    ),
-    retrieve=extend_schema(
-        operation_id='plant_ident_retrieve',
-        description=PrivilegedOrReadOnlyAuthenticated.get_description()
-    ),
-    update=extend_schema(
-        operation_id='plant_ident_update',
-        description=PrivilegedOrReadOnlyAuthenticated.get_description()
-    ),
-    partial_update=extend_schema(
-        operation_id='plant_ident_partial_update',
-        description=PrivilegedOrReadOnlyAuthenticated.get_description()
-    ),
-    destroy=extend_schema(
-        operation_id='plant_ident_destroy',
-        description=PrivilegedOrReadOnlyAuthenticated.get_description()
-    ),
-)
-class PlantIdentifierViewSet(viewsets.ModelViewSet):
-    serializer_class = PlantIdentifierSerializer
-    queryset = PlantIdentifier.objects.all()
-    permission_classes = [PrivilegedOrReadOnlyAuthenticated]
-    authentication_classes = default_authentication_classes
-    filterset_fields = {
-        'latin_name': ['icontains', 'iexact'],
-        'common_name': ['icontains', 'iexact']
-    }
-
-
-@extend_schema_view(
-    create=extend_schema(
         operation_id='plant_create',
         description=PrivilegedOrReadOnlyAuthenticated.get_description()
     ),
@@ -137,6 +99,9 @@ class PlantViewSet(viewsets.ModelViewSet):
     permission_classes = [PrivilegedOrReadOnlyAuthenticated]
     authentication_classes = default_authentication_classes
     filterset_fields = {
-        'datetime_added': ['lt', 'gt', 'exact', 'year', 'month', 'day', 'hour', 'in'],
-        'description': ['icontains']
+        'created_at': ['lt', 'gt', 'exact', 'year', 'month', 'day', 'hour', 'in'],
+        'updated_at': ['lt', 'gt', 'exact', 'year', 'month', 'day', 'hour', 'in'],
+        'description': ['icontains'],
+        'latin_name': ['icontains', 'iexact'],
+        'common_name': ['icontains', 'iexact'],
     }

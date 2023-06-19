@@ -17,14 +17,6 @@ from django.utils.timezone import now
 '''
 
 
-class PlantIdentifierSerializer(serializers.ModelSerializer):
-    plant = serializers.PrimaryKeyRelatedField(read_only=True)
-
-    class Meta:
-        model = PlantIdentifier
-        fields = '__all__'
-
-
 class PlantInformationSerializer(serializers.ModelSerializer):
     plant = serializers.PrimaryKeyRelatedField(read_only=True)
 
@@ -34,18 +26,13 @@ class PlantInformationSerializer(serializers.ModelSerializer):
 
 
 class PlantSerializer(serializers.ModelSerializer):
-    identifier = PlantIdentifierSerializer()
     info = PlantInformationSerializer()
-    datetime_added = serializers.DateTimeField(read_only=True, default=now())
 
     class Meta:
         model = Plant
         fields = '__all__'
 
     def create(self, validated_data):
-        print(validated_data)
-        identifier_data = validated_data.pop('identifier')
         info_data = validated_data.pop('info')
-        identifier = PlantIdentifier.objects.create(**identifier_data)
         info = PlantInformation.objects.create(**info_data)
-        return Plant.objects.create(**validated_data, identifier=identifier, info=info)
+        return Plant.objects.create(**validated_data, info=info)

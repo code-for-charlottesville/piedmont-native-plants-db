@@ -20,7 +20,6 @@ urlpatterns = [
 
 router = routers.DefaultRouter()
 router.register('plants', backend.PlantViewSet, basename='Plants')
-router.register('identifiers', backend.PlantIdentifierViewSet, basename='Identifier')
 router.register('information', backend.PlantInformationViewSet, basename='Information')
 
 urlpatterns += router.urls
