@@ -36,3 +36,13 @@ class PlantSerializer(serializers.ModelSerializer):
         info_data = validated_data.pop('info')
         info = PlantInformation.objects.create(**info_data)
         return Plant.objects.create(**validated_data, info=info)
+
+    def update(self, instance: Plant, validated_data):
+        info_data = validated_data.pop('info')
+        info = instance.info
+        super().update(instance, validated_data)
+
+        for attr, val in info_data.items():
+            setattr(info, attr, val)
+        info.save()
+        return instance
