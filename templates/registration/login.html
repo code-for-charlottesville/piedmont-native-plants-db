@@ -1,6 +1,7 @@
 {% extends 'frontend/components/base.html' %}
 
 {% load bootstrap5 %}
+{% load frontend_template_tags %}
 {% bootstrap_css %}
 {% bootstrap_form %}
 {% bootstrap_javascript %}
@@ -12,37 +13,9 @@
       <form method="post">
         {% csrf_token %}
 
-        {% if form.non_field_errors %}
-          <div class="alert alert-danger" role="alert">
-            {% for error in form.non_field_errors %}
-              {{ error }}
-            {% endfor %}
-          </div>
-        {% endif %}
-
-        <div class="form-group mb-3">
-          {% if form.username.errors %}
-            <div class="alert alert-danger" role="alert">
-              {% for error in form.username.errors %}
-                {{ error }}
-              {% endfor %}
-            </div>
-          {% endif %}
-          <label for="id_username" class="form-label">Username</label>
-          <input type="text" id="id_username" name="username" class="form-control" required>
-        </div>
-
-        <div class="form-group mb-3">
-          {% if form.password.errors %}
-            <div class="alert alert-danger" role="alert">
-              {% for error in form.password.errors %}
-                {{ error }}
-              {% endfor %}
-            </div>
-          {% endif %}
-          <label for="id_password" class="form-label">Password</label>
-          <input type="password" id="id_password" name="password" class="form-control" required>
-        </div>
+        {% bs_errors form.non_field_errors %}
+        {% bs_form_field form.username %}
+        {% bs_form_field form.password 'password' %}
 
         <button type="submit" class="btn btn-primary">Sign In</button>
       </form>
