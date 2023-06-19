@@ -1,0 +1,98 @@
+{% extends 'frontend/components/base.html' %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_form %}
+{% bootstrap_javascript %}
+
+{% block content %}
+  <section class="card mt-4 mb-4">
+    <div class="card-body">
+      <form method="post">
+        {% csrf_token %}
+
+        {% if form.non_field_errors %}
+          <div class="alert alert-danger" role="alert">
+            {% for error in form.non_field_errors %}
+              {{ error }}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <div class="form-group mb-3">
+          {% if form.first_name.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.first_name.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_first_name" class="form-label">First Name</label>
+          <input type="text" id="id_first_name" name="first_name" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+          {% if form.last_name.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.last_name.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_last_name" class="form-label">Last Name</label>
+          <input type="text" id="id_last_name" name="last_name" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+          {% if form.username.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.username.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_username" class="form-label">Username</label>
+          <input type="text" id="id_username" name="username" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+          {% if form.email.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.email.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_email" class="form-label">Email</label>
+          <input type="email" id="id_email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+          {% if form.password.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.password.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_password" class="form-label">Password</label>
+          <input type="password" id="id_password" name="password" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+          {% if form.password_confirmation.errors %}
+            <div class="alert alert-danger" role="alert">
+              {% for error in form.password_confirmation.errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <label for="id_password_confirmation" class="form-label">Confirm Password</label>
+          <input type="password" id="id_password_confirmation" name="password_confirmation" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </section>
+{% endblock %}
