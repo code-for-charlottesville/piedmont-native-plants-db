@@ -1,34 +1,11 @@
-import re
-
 from django.contrib.auth.models import User
-from django.test import TestCase
 from django.urls import reverse
 from knox.models import AuthToken
 from rest_framework import status
 from rest_framework.exceptions import ErrorDetail
-from rest_framework.test import APIClient
 
-
-def assemble_payload(obj, *fields):
-    """Assemble a dictionary from the given object and field names."""
-    payload = {}
-    for field in fields:
-        payload[field] = getattr(obj, field)
-    return payload
-
-
-def extract_error_details(error_field) -> list[ErrorDetail]:
-    """When an error occurs during the processing of a request,
-    django will store the string representations of `ErrorDetail`s in
-    the field that caused the error.
-    This function extracts these errors to easily assert against."""
-    regex = r"""ErrorDetail\(string=['"](?P<string>.*)['"], code=['"](?P<code>.*)['"]\)"""
-    matches = re.findall(regex, str(error_field))
-    errors = []
-    for match in matches:
-        string, code = match
-        errors.append(ErrorDetail(string=string, code=code))
-    return errors
+from backend.tests.ApiTestCase import ApiTestCase
+from backend.tests.ApiTestUtilities import assemble_payload, extract_error_details
 
 
 class TestUser:
@@ -49,29 +26,17 @@ class TestCreateUserSameName:
     email = 'duplicate@gmail.com'
 
 
-class TestAccountViews(TestCase):
+class TestAccountViews(ApiTestCase):
     user = None
     client = None
 
     def setUp(self) -> None:
+        super().setUp()
         self.user = User.objects.create_user(
             username=TestUser.username,
             password=TestUser.password,
             email=TestUser.email
         )
-        self.client = APIClient()
-
-    def set_client_credentials(self, token_key):
-        """Specifies the auth token necessary to access `TokenAuthentication` based views"""
-        self.client.credentials(HTTP_AUTHORIZATION=f'Token {token_key}')
-
-    def assertAllIn(self, obj, *members):
-        for member in members:
-            self.assertTrue(member in obj, msg=f'Error! {member} is not in {obj}')
-
-    def assertNoneIn(self, obj, *members):
-        for member in members:
-            self.assertFalse(member in obj, msg=f'Error! {member} is in {obj}')
 
     def refresh_user(self):
         """The attribute `self.user` may not be immediately updated by requests.
