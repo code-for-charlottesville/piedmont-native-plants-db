@@ -12,8 +12,7 @@ def signup(request):
             user = form.save(commit=False)
             user.set_password(user.password)
             user.save()
-            user = authenticate(request, username=user.username, password=user.password)
-            login(request, user)
+            login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             return HttpResponseRedirect(redirect_to='/')
     else:
         form = SignupForm()
