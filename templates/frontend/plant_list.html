@@ -45,11 +45,11 @@
     <section class="card mb-4 {% if forloop.first %} mt-4 {% endif %}">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="{% url 'frontend:plant_detail' plant.id %}">{{ plant.identifier.common_name }}</a>
+          <a href="{% url 'frontend:plant_detail' plant.id %}">{{ plant.common_name }}</a>
         </h5>
         <div class="mb-2 d-flex justify-content-between">
-          <h6 class="card-subtitle text-muted">{{ plant.identifier.latin_name }}</h6>
-          <h6 class="card-subtitle text-muted">{{ plant.datetime_added }}</h6>
+          <h6 class="card-subtitle text-muted">{{ plant.latin_name }}</h6>
+          <h6 class="card-subtitle text-muted">{{ plant.created_at }}</h6>
         </div>
         <p class="card-text">
           <hr class="mt-2 mb-2">
