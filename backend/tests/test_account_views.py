@@ -65,7 +65,7 @@ class TestAccountViews(ApiTestCase):
         token, key = AuthToken.objects.create(user=self.user)
         self.set_client_credentials(key)
         response = self.client.post(path=reverse('backend:signout'))
-        self.assertEquals(0, len(AuthToken.objects.all()))
+        self.assertRaises(AuthToken.DoesNotExist, AuthToken.objects.get, pk=token.pk)
         self.assertEquals(status.HTTP_204_NO_CONTENT, response.status_code)
 
     def test_signout__double_tokens(self):
@@ -78,10 +78,10 @@ class TestAccountViews(ApiTestCase):
         self.assertEquals(status.HTTP_204_NO_CONTENT, response.status_code)
 
     def test_signout__invalid_token(self):
-        token1, key1 = AuthToken.objects.create(user=self.user)
+        token, key = AuthToken.objects.create(user=self.user)
         self.set_client_credentials('InvalidToken')
         response = self.client.post(path=reverse('backend:signout'))
-        self.assertIsNotNone(AuthToken.objects.get(pk=token1.pk))
+        self.assertIsNotNone(AuthToken.objects.get(pk=token.pk))
         self.assertEquals(status.HTTP_401_UNAUTHORIZED, response.status_code)
 
     # View: SignOutAll
@@ -103,15 +103,16 @@ class TestAccountViews(ApiTestCase):
 
     def test_signoutall__invalid_token(self):
         token1, key1 = AuthToken.objects.create(user=self.user)
+        token2, key2 = AuthToken.objects.create(user=self.user)
         self.set_client_credentials('InvalidToken')
         response = self.client.post(path=reverse('backend:signoutall'))
         self.assertIsNotNone(AuthToken.objects.get(pk=token1.pk))
+        self.assertIsNotNone(AuthToken.objects.get(pk=token2.pk))
         self.assertEquals(status.HTTP_401_UNAUTHORIZED, response.status_code)
 
     # View: Account
     def test_account__valid_token(self):
-        token, key = AuthToken.objects.create(user=self.user)
-        self.set_client_credentials(key)
+        self.set_client_credentials()
         response = self.client.get(path=reverse('backend:account'))
         self.assertTrue('id' in response.data)
         self.assertUser(TestUser, response.data, 'email', 'username')
