@@ -13,7 +13,9 @@ def display_name(value):
 
 @register.inclusion_tag('frontend/templatetags/bs_form_field.html')
 def bs_form_field(field: BoundField, input_type=None):
-    return {'field': field, 'type': input_type}
+    base_widget = field.subwidgets[0]
+    required = base_widget.data.get('required', False)
+    return {'field': field, 'type': input_type, 'required': required}
 
 
 @register.inclusion_tag('frontend/templatetags/bs_error.html')
