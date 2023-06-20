@@ -14,9 +14,9 @@ def plant_list(request):
     form = PlantSearchForm(request.GET or request.POST or None)
     if form.is_valid():
         if latin_name := form.cleaned_data['latin_name']:
-            plants = plants.filter(identifier__latin_name__icontains=latin_name)
+            plants = plants.filter(latin_name__icontains=latin_name)
         if common_name := form.cleaned_data['common_name']:
-            plants = plants.filter(identifier__common_name__icontains=common_name)
+            plants = plants.filter(common_name__icontains=common_name)
     context = {
         'form': form,
         'plants': plants
