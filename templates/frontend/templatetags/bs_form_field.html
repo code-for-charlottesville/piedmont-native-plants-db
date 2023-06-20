@@ -1,7 +1,16 @@
 {% load frontend_template_tags %}
 
 <div class="form-group mb-3">
-  {% bs_errors field.errors %}
-  <label for="{{ field.id_for_label }}" class="form-label">{{ field.name|display_name }}</label>
-  <input type="{% if type %}{{ type }}{% else %}{{ field.widget_type }}{% endif %}" id="{{ field.id_for_label }}" name="{{ field.name }}" class="form-control" required>
+  {% if field.widget_type != 'select' %}
+    {% bs_errors field.errors %}
+    <label for="{{ field.id_for_label }}" class="form-label">{{ field.name|display_name }}</label>
+    <input type="{% if type %}{{ type }}{% else %}{{ field.widget_type }}{% endif %}" id="{{ field.id_for_label }}" name="{{ field.name }}" class="form-control" required>
+  {% else %}
+    <label for="{{ field.id_for_label }}" class="form-label">{{ field.name|display_name }}</label>
+    <select id="{{ field.id_for_label }}" class="form-select" name="{{ field.name }}" required>
+      {% for widget in field.subwidgets %}
+        <option value="{{ forloop.counter }}">{{ widget.data.label }}</option>
+      {% endfor %}
+    </select>
+  {% endif %}
 </div>
