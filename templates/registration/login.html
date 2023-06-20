@@ -10,15 +10,7 @@
 {% block content %}
   <section class="card mt-4 mb-4">
     <div class="card-body">
-      <form method="post">
-        {% csrf_token %}
-
-        {% bs_errors form.non_field_errors %}
-        {% bs_form_field form.username %}
-        {% bs_form_field form.password 'password' %}
-
-        <button type="submit" class="btn btn-primary">Sign In</button>
-      </form>
+      {% bs_form form %}
     </div>
   </section>
 {% endblock %}
