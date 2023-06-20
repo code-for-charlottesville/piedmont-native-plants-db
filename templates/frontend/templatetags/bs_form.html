@@ -1,0 +1,9 @@
+{% load frontend_template_tags %}
+<form method="post">
+  {% csrf_token %}
+  {% bs_errors form.non_field_errors %}
+  {% for field in form %}
+    {% bs_form_field field %}
+  {% endfor %}
+  <button type="submit" class="btn btn-primary" id="submit">{{ button_name }}</button>
+</form>

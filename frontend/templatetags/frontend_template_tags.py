@@ -19,3 +19,8 @@ def bs_form_field(field: BoundField, input_type=None):
 @register.inclusion_tag('frontend/templatetags/bs_error.html')
 def bs_errors(errors):
     return {'errors': errors}
+
+
+@register.inclusion_tag('frontend/templatetags/bs_form.html')
+def bs_form(form, button_name='submit'):
+    return {'form': form, 'button_name': button_name}
