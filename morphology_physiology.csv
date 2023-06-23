@@ -1,0 +1,558 @@
+Id,Active Growth Period,After Harvest Regrowth Rate,Bloat,C:N Ratio,Coppice Potential,Fall Conspicuous,Fire Resistant,Flower Color,Flower Conspicuous,Foliage Color,Foliage Porosity Summer,Foliage Porosity Winter,Foliage Texture,Fruit/Seed Color,Fruit/Seed Conspicuous,Growth Form,Growth Rate,"Height, Mature (feet)",Known Allelopath,Leaf Retention,Lifespan,Low Growing Grass,Nitrogen Fixation,Resprout Ability,Shape and Orientation,Toxicity,"Height at 20 Years, Maximum (feet)"
+14459,,,,,,,,,,,,,,,,,,,,,,,,,,,
+14357,Spring and Summer,Slow,None,Medium,No,Yes,No,Brown,No,Dark Green,Moderate,Porous,Fine,Brown,No,Rhizomatous,Moderate,1.3,No,No,Moderate,No,None,No,Semi-Erect,None,
+13080,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13404,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,,No,Green,Dense,Porous,Fine,,No,Rhizomatous,Moderate,3.0,No,No,Long,No,None,No,Semi-Erect,None,
+13412,,,,,,,,,,,,,,,,,,,,,,,,,,,
+12926,Spring and Summer,,None,Medium,No,No,No,,No,Green,Porous,Porous,Fine,,No,Rhizomatous,Moderate,1.4,No,No,Moderate,No,None,No,Erect,None,
+14477,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13296,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13568,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13578,Spring and Summer,Slow,None,,No,No,No,Brown,No,Dark Green,Moderate,Porous,Coarse,Brown,No,Rhizomatous,Moderate,1.6,No,No,Moderate,No,None,No,Erect,None,
+13597,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13605,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13562,,,,,,,,,,,,,,,,,,,,,,,,,,,
+14155,,,,,,,,,,,,,,,,,,,,,,,,,,,
+14160,Spring and Fall,Slow,None,,No,No,No,Orange,No,Green,Moderate,Porous,Fine,Brown,No,Bunch,Moderate,4.9,No,No,Moderate,No,None,No,Erect,None,
+14166,"Spring, Summer, Fall",,None,High,No,Yes,No,Brown,No,Dark Green,Dense,Porous,Medium,Brown,No,Rhizomatous,Moderate,4.0,No,No,Long,No,None,No,Semi-Erect,None,
+14167,"Spring, Summer, Fall",,None,High,No,Yes,No,,No,Dark Green,Dense,Porous,Fine,,No,Rhizomatous,Moderate,6.0,No,No,Long,No,None,No,Semi-Erect,None,
+14559,,,,,,,,,,,,,,,,,,,,,,,,,,,
+14320,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13787,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13351,Spring and Summer,Slow,None,,No,No,No,Green,No,Dark Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,6.6,No,No,Moderate,No,None,No,Erect,Slight,
+14837,Spring,Slow,None,,No,No,No,Brown,No,Yellow-Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,1.5,No,No,Moderate,No,None,No,Erect,None,
+14854,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13778,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20153,"Spring, Summer, Fall",Moderate,None,Low,No,No,No,Green,No,Green,Dense,Porous,Coarse,Brown,No,Bunch,Moderate,3.5,No,No,Short,Yes,None,No,Erect,None,
+20180,"Spring, Summer, Fall",Moderate,None,Low,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Moderate,3.5,No,No,Short,No,None,No,Decumbent,None,
+20316,Summer,Moderate,None,Medium,No,No,No,Yellow,No,Green,Dense,Porous,Medium,Brown,No,Bunch,Moderate,7.0,No,No,Long,No,None,No,Erect,None,
+20324,Summer,Moderate,None,Medium,No,Yes,No,White,No,Green,Dense,Moderate,Fine,Brown,No,Bunch,Moderate,6.3,No,No,Moderate,Yes,None,No,Erect,None,
+20367,Summer,Slow,None,High,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Slow,3.0,No,No,Moderate,No,None,No,Erect,None,
+23350,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20561,Spring,Rapid,None,High,No,Yes,No,,No,Dark Green,Dense,Dense,Medium,,No,Rhizomatous,Rapid,25.0,No,No,Long,No,None,No,Erect,None,
+21603,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20755,Summer,Moderate,None,Medium,No,No,No,Yellow,No,Gray-Green,Porous,Porous,Fine,Brown,No,Stoloniferous,Moderate,0.5,No,No,Moderate,Yes,None,No,Decumbent,None,
+20816,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20903,Spring and Summer,Slow,None,Medium,No,No,No,Yellow,No,Green,Moderate,Porous,Fine,Brown,No,Bunch,Moderate,4.0,No,No,Long,No,None,No,Erect,None,
+20954,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Yellow,No,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Rapid,4.5,No,No,Short,Yes,None,No,Semi-Erect,None,
+21103,Spring,Moderate,None,,No,No,No,Green,No,Green,Moderate,Porous,Medium,Yellow,No,Rhizomatous,Moderate,4.9,No,No,Long,No,None,No,Erect,None,
+21127,Spring,Moderate,None,,No,No,No,Green,No,Green,Moderate,Porous,Medium,Yellow,No,Bunch,Moderate,4.9,No,No,Long,No,None,No,Erect,None,
+18129,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,2.0,No,No,Long,No,None,No,Semi-Erect,None,
+18150,,,,,,,,,,,,,,,,,,,,,,,,,,,
+18180,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Dense,Porous,Coarse,Brown,No,Bunch,Moderate,1.8,No,No,Long,No,None,No,Semi-Erect,None,
+18236,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Slow,2.0,No,No,Moderate,No,None,No,Erect,None,
+18297,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Porous,Porous,Medium,Brown,No,Bunch,Moderate,2.6,No,No,Moderate,No,None,No,Erect,None,
+18321,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Slow,5.0,No,No,Long,No,None,No,Erect,None,
+18330,Spring,Slow,None,,No,No,Yes,Green,No,Green,Porous,Porous,Fine,Brown,No,Bunch,Moderate,5.2,No,No,Long,No,None,No,Erect,None,
+18354,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,3.0,No,No,Long,No,None,No,Semi-Erect,None,
+18467,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Slow,2.0,No,No,Long,No,None,No,Erect,None,
+18452,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Gray-Green,Moderate,Porous,Medium,Brown,No,Bunch,Slow,1.0,No,No,Long,No,None,No,Erect,None,
+18494,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Dark Green,Moderate,Porous,Coarse,Brown,No,Bunch,Slow,3.0,No,No,Long,No,None,No,Semi-Erect,None,
+18499,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Slow,2.5,No,No,Long,No,None,No,Erect,None,
+17314,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Green,No,Dark Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,3.0,No,No,Moderate,No,None,No,Erect,None,
+17455,Spring,Slow,None,,No,No,Yes,Green,No,Green,Porous,Porous,Fine,Yellow,No,Bunch,Moderate,4.3,No,No,Long,No,None,No,Erect,None,
+17458,Spring,Slow,None,,No,No,Yes,Green,No,Green,Porous,Porous,Fine,Yellow,No,Bunch,Moderate,3.2,No,No,Long,No,None,No,Erect,None,
+17576,Spring and Summer,Slow,None,High,No,No,No,Green,No,Green,Dense,Porous,Coarse,Brown,No,Bunch,Rapid,5.0,No,No,Long,No,None,No,Erect,None,
+17676,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17706,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17718,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,2.3,No,No,Moderate,No,None,No,Semi-Erect,None,
+17749,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17767,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17826,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,2.5,No,No,Long,No,None,No,Erect,None,
+17859,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,3.0,No,No,Long,No,None,No,Erect,None,
+17885,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Fine,Brown,No,Bunch,Slow,3.0,No,No,Moderate,No,None,No,Erect,None,
+17903,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Coarse,Brown,No,Bunch,Slow,3.5,No,No,Moderate,No,None,No,Erect,None,
+17921,Spring,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Yellow,No,Bunch,Moderate,4.2,No,No,Long,No,None,No,Erect,None,
+17948,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17981,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Slow,2.8,No,No,Long,No,None,No,Erect,None,
+17988,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Coarse,Brown,No,Bunch,Slow,3.0,No,No,Moderate,No,None,No,Erect,None,
+18058,Spring,Slow,None,,No,No,Yes,Green,No,Green,Porous,Porous,Fine,Yellow,No,Bunch,Moderate,3.2,No,No,Long,No,None,No,Erect,None,
+21302,Spring,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Black,Yes,Rhizomatous,Moderate,4.6,No,No,Moderate,Yes,None,No,Erect,None,
+21304,Spring,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Black,No,Rhizomatous,Moderate,3.3,No,No,Moderate,Yes,None,No,Erect,None,
+21368,Spring,Slow,None,High,No,No,Yes,Green,No,Green,Moderate,Porous,Medium,Yellow,No,Bunch,Moderate,4.9,No,No,Long,No,None,No,Erect,None,
+24236,,,,,,,,,,,,,,,,,,,,,,,,,,,
+18590,Summer and Fall,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Yellow,No,Rhizomatous,Rapid,0.7,No,No,Short,No,None,No,Semi-Erect,None,
+18714,Summer and Fall,Slow,None,Medium,No,No,No,Brown,No,Green,Moderate,Porous,Fine,Black,No,Bunch,Moderate,2.0,No,No,Short,No,None,No,Erect,None,
+18835,Spring,Slow,None,High,No,No,Yes,Brown,No,Green,Moderate,Porous,Fine,Red,Yes,Bunch,Moderate,3.2,No,No,Long,No,None,No,Erect,None,
+21508,Spring,Slow,None,Medium,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,2.4,No,No,Moderate,No,None,No,Erect,None,
+21519,,,,,,,,,,,,,,,,,,,,,,,,,,,
+21520,,,,,,,,,,,,,,,,,,,,,,,,,,,
+21602,Spring and Summer,Slow,None,Medium,No,No,No,Yellow,No,Green,Porous,Porous,Fine,Brown,No,Bunch,Moderate,2.6,No,No,Short,No,None,No,Erect,None,
+21710,Spring and Summer,Slow,None,Medium,No,No,No,,No,Green,Dense,Porous,Medium,Brown,No,Bunch,Slow,2.0,No,No,Long,No,None,No,Semi-Erect,None,
+21712,Summer,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Yellow,No,Bunch,Rapid,4.9,No,No,Short,No,None,No,Erect,None,
+18864,Summer,Slow,None,High,No,No,Yes,Brown,No,Dark Green,Porous,Porous,Fine,Brown,No,Rhizomatous,Moderate,2.6,No,No,Moderate,No,None,No,Erect,None,
+18868,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,White,No,,Porous,Porous,,Brown,No,Rhizomatous,Moderate,0.7,No,No,Moderate,No,None,No,Erect,None,
+19007,Spring,,None,High,No,No,Yes,Yellow,No,Dark Green,Moderate,Porous,Fine,Brown,No,Rhizomatous,Moderate,1.6,No,No,Short,No,None,No,Erect,None,
+19059,"Spring, Summer, Fall",,None,High,No,No,No,Green,No,,Porous,Porous,,Brown,No,Bunch,Moderate,4.0,No,No,Moderate,No,None,No,Erect,None,
+22394,"Spring, Summer, Fall",Moderate,None,Medium,No,No,No,Yellow,No,Green,Porous,Porous,Coarse,Brown,No,Bunch,Rapid,3.0,No,No,Short,No,None,No,Erect,None,
+22465,,,,,,,,,,,,,,,,,,,,,,,,,,,
+22557,Spring and Summer,Slow,None,Medium,No,No,No,Yellow,No,Dark Green,Moderate,Porous,Coarse,Brown,No,Bunch,Moderate,4.5,No,No,Moderate,No,None,No,Erect,None,
+22656,Spring,Slow,None,Medium,No,No,No,Yellow,No,Green,Moderate,Porous,Coarse,Brown,No,Bunch,Moderate,2.8,No,No,Short,No,None,No,Erect,None,
+22734,,,,,,,,,,,,,,,,,,,,,,,,,,,
+22864,Spring,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Yellow,Yes,Rhizomatous,Moderate,0.9,No,No,Moderate,No,None,No,Erect,None,
+25363,Summer,Moderate,None,High,No,Yes,No,Green,No,Green,Porous,Porous,Coarse,White,No,Bunch,Rapid,9.8,No,No,Moderate,No,None,No,Erect,None,
+23137,Spring and Fall,Moderate,None,Medium,No,No,Yes,Yellow,No,Green,Porous,Porous,Fine,Brown,No,Rhizomatous,Moderate,2.4,No,No,Moderate,Yes,None,No,Semi-Erect,None,
+23194,Spring and Summer,Slow,None,Medium,No,No,No,Yellow,No,Green,Porous,Porous,Fine,Brown,No,Bunch,Moderate,3.0,No,No,Moderate,No,None,No,Erect,None,
+23267,Spring,Moderate,None,,No,No,No,Green,No,Green,Moderate,Porous,Fine,Black,No,Bunch,Moderate,3.9,No,No,Moderate,No,None,No,Erect,None,
+23276,Spring,Slow,None,,No,No,No,Green,No,Green,Moderate,Porous,Fine,Red,No,Rhizomatous,Moderate,5.7,No,No,Short,No,None,No,Semi-Erect,None,
+23359,"Spring, Summer, Fall",Moderate,None,Medium,No,No,No,Yellow,No,Gray-Green,Porous,Porous,Medium,Black,No,Bunch,Moderate,2.0,No,No,Moderate,No,None,No,Semi-Erect,None,
+26541,Spring and Summer,Slow,None,High,No,No,No,Purple,No,Green,Porous,Porous,Medium,Brown,No,Bunch,Moderate,3.0,No,No,Moderate,No,None,No,Erect,None,
+26611,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Green,No,Green,Dense,Porous,Fine,Brown,No,Bunch,Rapid,3.2,No,No,Long,No,None,No,Erect,None,
+26634,"Spring, Summer, Fall",Slow,None,High,No,No,No,Green,No,Red,Dense,Porous,Coarse,Brown,No,Bunch,Moderate,2.9,No,No,Moderate,No,None,No,Erect,None,
+26651,Spring,Slow,None,Medium,No,No,Yes,Brown,No,Dark Green,Moderate,Porous,Coarse,Yellow,No,Bunch,Moderate,6.6,No,No,Long,No,None,No,Erect,None,
+26724,Spring and Summer,Slow,None,Medium,No,No,No,Brown,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Moderate,2.0,No,No,Long,No,None,No,Erect,None,
+26783,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Moderate,3.0,No,No,Long,No,None,No,Erect,None,
+26799,Spring and Summer,Slow,None,Medium,No,No,No,Green,No,Green,Porous,Porous,Fine,Brown,No,Bunch,Slow,1.5,No,No,Moderate,No,None,No,Erect,None,
+23605,Summer,Moderate,None,,No,No,No,Green,No,Dark Green,Moderate,Porous,Fine,Red,No,Rhizomatous,Moderate,4.9,No,No,Moderate,No,None,No,Erect,None,
+23608,Spring,Moderate,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Red,No,Rhizomatous,Moderate,3.9,No,No,Short,Yes,None,No,Erect,None,
+23997,Spring and Summer,Moderate,None,Medium,No,Yes,No,Red,No,Yellow-Green,Dense,Moderate,Fine,Purple,No,Bunch,Moderate,3.0,No,No,Short,Yes,None,No,Erect,None,
+24042,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Green,No,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,3.0,No,No,Short,No,None,No,Semi-Erect,None,
+24262,Summer and Fall,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Fine,Yellow,No,Bunch,Rapid,3.3,No,No,,No,None,No,Semi-Erect,None,
+24345,Summer,Slow,None,,No,No,No,Green,No,Green,Dense,Dense,Medium,Brown,No,Bunch,Moderate,3.3,No,No,Long,No,None,No,Erect,None,
+24393,Summer,Slow,None,Medium,No,No,No,Yellow,No,Green,Dense,Porous,Medium,Brown,No,Rhizomatous,Rapid,6.0,No,No,Long,No,None,No,Erect,None,
+24659,"Spring, Summer, Fall",Moderate,None,Medium,No,No,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,No,Rhizomatous,Rapid,6.0,No,No,Long,Yes,None,No,Erect,Slight,
+24710,Spring,Moderate,None,High,No,No,No,White,No,Green,Dense,Moderate,Coarse,White,Yes,Rhizomatous,Rapid,13.0,No,No,Long,No,Low,No,Erect,None,
+25028,"Spring, Summer, Fall",Slow,None,Low,No,No,No,Yellow,No,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Slow,2.0,No,No,Moderate,Yes,None,No,Erect,None,
+25340,,,,,,,,,,,,,,,,,,,,,,,,,,,
+25478,Summer and Fall,Moderate,None,Medium,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,3.5,No,No,Long,No,None,No,Erect,None,
+19652,Summer,Slow,None,Medium,No,No,Yes,Blue,No,Dark Green,Dense,Moderate,Coarse,Brown,No,Rhizomatous,Moderate,4.9,No,No,Long,No,None,No,Erect,None,
+19669,"Spring, Summer, Fall",Slow,None,High,No,No,No,Red,No,Green,Dense,Porous,Coarse,Green,No,Rhizomatous,Rapid,9.0,No,No,Long,No,None,No,Erect,None,
+19732,Spring,Slow,None,,No,No,No,Brown,No,Dark Green,Moderate,Porous,Coarse,Brown,No,Bunch,Moderate,5.9,No,No,Long,No,None,No,Erect,None,
+19736,Spring,Slow,None,,No,No,No,Green,No,Green,Moderate,Porous,Coarse,Yellow,Yes,Bunch,Moderate,4.9,No,No,Long,No,None,No,Erect,None,
+19768,Spring and Summer,Slow,None,High,No,No,No,Red,No,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Moderate,4.0,No,No,Long,No,None,No,Erect,None,
+25695,Summer and Fall,Slow,None,Medium,No,No,No,Yellow,No,Green,Dense,Porous,Medium,Brown,No,Bunch,Rapid,6.5,No,No,Long,No,None,No,Erect,None,
+26962,Spring,Slow,None,,No,No,No,Green,No,Green,Moderate,Porous,Medium,Green,No,Colonizing,Moderate,3.2,No,No,Moderate,No,None,No,Erect,None,
+25851,Spring and Summer,Slow,None,Medium,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,2.3,No,No,Moderate,No,None,No,Erect,None,
+26132,Summer,Rapid,None,Low,No,Yes,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,Yes,Bunch,Moderate,2.5,No,No,Short,No,None,No,Erect,None,
+26161,Spring and Summer,Rapid,None,Medium,No,No,No,Yellow,No,Green,Dense,Moderate,Medium,Brown,No,Bunch,Rapid,6.0,No,No,Long,No,None,No,Erect,None,
+27001,Spring and Summer,Moderate,None,High,No,No,No,Brown,No,Green,Porous,Porous,Coarse,Brown,Yes,Rhizomatous,Rapid,5.0,No,No,Moderate,No,None,No,Erect,None,
+26483,Spring and Summer,Rapid,None,Medium,No,Yes,No,Yellow,No,Green,Dense,Moderate,Coarse,Yellow,No,Rhizomatous,Rapid,9.0,No,No,Moderate,Yes,None,No,Erect,None,
+31206,Spring,Moderate,Low,Medium,No,No,No,White,Yes,Green,Porous,Porous,Fine,Brown,No,Rhizomatous,Moderate,3.0,No,No,Moderate,No,None,No,Erect,Slight,
+16268,Spring and Summer,Slow,None,,No,No,Yes,Yellow,No,Green,Dense,Moderate,Medium,Green,No,Rhizomatous,Moderate,3.9,No,No,Moderate,No,None,No,Erect,None,
+16271,Spring and Summer,Moderate,None,High,No,No,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,No,Rhizomatous,Moderate,5.0,No,No,Moderate,No,None,No,Semi-Erect,None,
+72484,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72494,,,,,,,,,,,,,,,,,,,,,,,,,,,
+31339,,,,,,,,,,,,,,,,,,,,,,,,,,,
+15744,Spring and Summer,Slow,None,Medium,No,No,No,White,Yes,Green,Porous,Porous,Medium,Brown,No,Single Crown,Moderate,0.5,No,No,Moderate,No,None,No,Erect,None,
+27903,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43228,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72538,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72594,,,,,,,,,,,,,,,,,,,,,,,,,,,
+31762,Spring and Summer,Slow,None,Medium,No,No,No,Red,No,Dark Green,Porous,Porous,Fine,Brown,No,Stoloniferous,Slow,1.0,No,No,Short,No,None,No,Prostrate,None,
+31814,,,,,,,,,,,,,,,,,,,,,,,,,,,
+31911,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72621,,,,,,,,,,,,,,,,,,,,,,,,,,,
+16310,,,,,,,,,,,,,,,,,,,,,,,,,,,
+16316,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Dense,Dense,Coarse,Red,Yes,Rhizomatous,Moderate,1.5,Yes,No,Moderate,No,None,No,Erect,Slight,
+32298,Spring and Summer,Slow,None,High,No,No,Yes,White,No,White-Gray,Porous,Moderate,Medium,White,No,Rhizomatous,Rapid,3.0,Yes,No,Short,No,None,No,Erect,None,
+88802,,,,,,,,,,,,,,,,,,,,,,,,,,,
+71268,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43539,Spring,Slow,None,,No,No,Yes,Red,Yes,Green,Moderate,Porous,Coarse,Brown,No,Rhizomatous,Moderate,4.9,No,No,Moderate,No,None,No,Erect,Moderate,
+43580,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43599,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43605,Spring and Summer,Slow,None,Low,No,No,No,Orange,Yes,Green,Moderate,Porous,Coarse,Brown,Yes,Multiple Stem,Slow,2.0,No,No,Moderate,No,None,No,Erect,None,
+43619,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43621,,,,,,,,,,,,,,,,,,,,,,,,,,,
+68486,,,,,,,,,,,,,,,,,,,,,,,,,,,
+77136,"Spring, Summer, Fall",Moderate,None,Medium,No,No,No,White,Yes,Green,Porous,Porous,Fine,Brown,No,Stoloniferous,Moderate,0.5,No,No,Short,No,Low,No,Prostrate,Slight,
+78033,,,,,,,,,,,,,,,,,,,,,,,,,,,
+78085,Summer,Slow,None,Medium,No,No,No,Yellow,Yes,Gray-Green,Moderate,Porous,Medium,Brown,No,Single Crown,Moderate,2.5,No,No,Moderate,No,Low,No,Erect,None,
+32620,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Yellow,Yes,Green,Moderate,Porous,Coarse,Brown,Yes,Single Crown,Rapid,3.5,No,No,,No,None,No,Erect,None,
+32652,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,Yellow,Yes,Green,Moderate,Porous,Coarse,Purple,No,Single Crown,Rapid,3.2,No,No,,No,None,No,Erect,None,
+32705,"Spring, Summer, Fall",Slow,None,High,No,No,No,Yellow,No,Green,Moderate,Porous,Coarse,Brown,Yes,Single Crown,Rapid,4.0,No,No,,No,None,No,Erect,None,
+12726,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72708,Spring,Slow,None,High,No,No,No,Yellow,Yes,Green,Porous,Porous,Coarse,Brown,No,Single Crown,Slow,2.0,No,No,Moderate,No,None,No,Semi-Erect,None,
+78361,Spring,,None,Low,No,No,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Bunch,Rapid,2.4,No,No,,No,Medium,No,Erect,Slight,
+50704,,,,,,,,,,,,,,,,,,,,,,,,,,,
+33399,,,,,,,,,,,,,,,,,,,,,,,,,,,
+33436,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72807,,,,,,,,,,,,,,,,,,,,,,,,,,,
+78506,,,,,,,,,,,,,,,,,,,,,,,,,,,
+16911,,,,,,,,,,,,,,,,,,,,,,,,,,,
+33849,Summer,Slow,None,,No,Yes,No,Blue,No,Green,Moderate,Moderate,Medium,,No,Single Crown,Moderate,3.2,No,No,Moderate,No,None,No,Erect,None,
+28406,,,,,,,,,,,,,,,,,,,,,,,,,,,
+33940,Spring and Summer,Slow,None,Low,No,Yes,No,Yellow,Yes,Green,Dense,Porous,Medium,Black,Yes,Single Crown,Moderate,2.0,No,No,Moderate,No,None,No,Erect,None,
+33987,,,,,,,,,,,,,,,,,,,,,,,,,,,
+33992,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45660,,,,,,,,,,,,,,,,,,,,,,,,,,,
+84380,Summer and Fall,,None,High,No,No,No,Red,Yes,Green,Dense,Moderate,Coarse,Brown,No,Colonizing,Rapid,8.0,No,No,Long,No,None,Yes,Erect,None,
+73087,,,,,,,,,,,,,,,,,,,,,,,,,,,
+79106,Spring and Summer,Slow,Low,Low,No,Yes,No,Purple,Yes,Green,Moderate,Porous,Medium,Brown,Yes,Single Crown,Moderate,3.0,No,No,Moderate,No,Low,No,Erect,None,
+71832,,,,,,,,,,,,,,,,,,,,,,,,,,,
+71836,,,,,,,,,,,,,,,,,,,,,,,,,,,
+34298,,,,,,,,,,,,,,,,,,,,,,,,,,,
+34475,Spring and Summer,Slow,None,Medium,No,No,Yes,Purple,Yes,Green,Porous,Porous,Fine,Black,No,Single Stem,Moderate,1.2,No,No,Long,No,None,No,Erect,None,
+34506,Summer,Slow,None,High,No,No,No,Purple,Yes,Dark Green,Moderate,Porous,Coarse,Brown,No,Single Crown,Rapid,2.7,No,No,Moderate,No,None,No,Erect,None,
+15884,Spring,Slow,None,High,No,No,Yes,White,No,Gray-Green,Moderate,Porous,Medium,Yellow,No,Multiple Stem,Rapid,,No,No,Long,No,None,No,Erect,None,
+85932,Spring,Slow,None,,No,No,No,Red,Yes,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Moderate,3.3,No,No,Moderate,No,None,No,Erect,None,
+12212,Spring,Slow,None,,No,No,No,Green,No,Green,Porous,Porous,Coarse,Green,No,Rhizomatous,Rapid,0.9,No,No,Short,No,None,No,Erect,Moderate,
+12228,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35138,Spring and Summer,Slow,None,Medium,No,No,No,White,Yes,Green,Porous,Porous,Medium,Brown,No,Stoloniferous,Moderate,2.8,No,No,Short,No,None,No,Semi-Erect,None,
+35163,,,,,,,,,,,,,,,,,,,,,,,,,,,
+60308,,,,,,,,,,,,,,,,,,,,,,,,,,,
+74019,,,,,,,,,,,,,,,,,,,,,,,,,,,
+28499,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35396,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35415,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35438,,,,,,,,,,,,,,,,,,,,,,,,,,,
+76059,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35469,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35511,"Spring, Summer, Fall",Slow,None,High,No,Yes,No,Purple,Yes,Dark Green,Dense,Porous,Coarse,Brown,No,Rhizomatous,Moderate,4.6,No,No,Long,No,None,No,Erect,None,
+35594,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35639,Summer,Slow,None,High,No,No,No,Purple,Yes,Dark Green,Porous,Porous,Coarse,Black,No,Rhizomatous,Rapid,6.0,No,No,Moderate,No,None,No,Erect,None,
+35659,,,,,,,,,,,,,,,,,,,,,,,,,,,
+89751,,,,,,,,,,,,,,,,,,,,,,,,,,,
+44077,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,Purple,Yes,Green,Porous,Porous,Coarse,Brown,No,Bunch,Rapid,1.5,No,No,Moderate,No,None,No,Erect,None,
+83748,,,,,,,,,,,,,,,,,,,,,,,,,,,
+91870,,,,,,,,,,,,,,,,,,,,,,,,,,,
+89856,,,,,,,,,,,,,,,,,,,,,,,,,,,
+36117,Spring and Summer,Slow,None,,No,No,No,Yellow,Yes,Green,Moderate,Porous,Fine,Brown,No,Single Stem,Rapid,4.9,No,No,Moderate,No,None,No,Erect,Severe,
+36143,Spring,Slow,None,,No,No,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Multiple Stem,Moderate,3.2,No,No,Short,No,None,No,Erect,None,
+36186,Spring and Summer,Slow,None,,No,Yes,No,Yellow,Yes,Dark Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Moderate,5.6,No,No,Moderate,No,None,No,Erect,None,
+36212,,,,,,,,,,,,,,,,,,,,,,,,,,,
+36227,,,,,,,,,,,,,,,,,,,,,,,,,,,
+36245,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,Yellow,Yes,Dark Green,Moderate,Porous,Coarse,Brown,No,Rhizomatous,Moderate,5.0,No,No,Moderate,No,None,No,Erect,None,
+36265,Summer and Fall,Moderate,None,Low,No,No,No,Yellow,Yes,Green,Moderate,Porous,Coarse,Brown,No,Rhizomatous,Rapid,5.0,No,No,Moderate,No,None,No,Erect,None,
+36339,Spring and Summer,Slow,None,,No,Yes,No,Yellow,Yes,Yellow-Green,Dense,Porous,Coarse,Brown,No,Rhizomatous,Rapid,9.8,No,No,Moderate,No,None,No,Erect,None,
+36349,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73127,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73132,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73126,,,,,,,,,,,,,,,,,,,,,,,,,,,
+74048,Spring and Summer,Slow,None,Medium,No,No,No,White,Yes,Green,Porous,Porous,Coarse,Brown,No,Multiple Stem,Moderate,8.0,No,No,Short,No,None,No,Erect,Slight,
+91943,,,,,,,,,,,,,,,,,,,,,,,,,,,
+92054,,,,,,,,,,,,,,,,,,,,,,,,,,,
+66037,"Spring, Summer, Fall",,None,Medium,No,No,No,Purple,Yes,Green,Moderate,Porous,Coarse,Brown,No,Multiple Stem,Moderate,8.0,No,No,Moderate,No,None,No,Erect,None,
+66050,Spring,Slow,None,,No,No,No,White,Yes,Gray-Green,Moderate,Porous,Coarse,Brown,No,Multiple Stem,Rapid,6.6,No,No,Moderate,No,None,No,Erect,None,
+48282,,,,,,,,,,,,,,,,,,,,,,,,,,,
+48300,,,,,,,,,,,,,,,,,,,,,,,,,,,
+92324,,,,,,,,,,,,,,,,,,,,,,,,,,,
+87828,,,,,,,,,,,,,,,,,,,,,,,,,,,
+28744,Spring,Slow,None,Medium,No,No,No,Yellow,Yes,Green,Porous,Porous,Coarse,Black,No,Single Crown,Moderate,0.8,No,No,Moderate,No,None,No,Erect,None,
+83642,Summer,Slow,None,,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Single Crown,Rapid,4.9,No,No,,No,None,No,Erect,None,
+83653,Summer,Slow,None,,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Single Crown,Rapid,8.2,No,No,,No,None,No,Erect,None,
+27431,,,,,,,,,,,,,,,,,,,,,,,,,,,
+27615,,,,,,,,,,,,,,,,,,,,,,,,,,,
+27619,,,,,,,,,,,,,,,,,,,,,,,,,,,
+27620,Spring,,None,,No,No,No,Blue,Yes,Green,Porous,Porous,Coarse,Black,No,Rhizomatous,Moderate,3.3,No,No,Moderate,No,None,No,Erect,None,
+72325,,,,,,,,,,,,,,,,,,,,,,,,,,,
+48923,Spring,,None,Medium,No,No,No,White,Yes,Dark Green,,,Fine,Brown,No,Rhizomatous,Rapid,2.5,No,No,,No,None,No,Erect,None,
+16464,Summer,,None,,No,No,Yes,Green,No,Green,,,Fine,,No,Single Crown,Rapid,,No,No,Short,No,None,No,Decumbent,None,
+79847,Summer,Slow,None,Medium,No,No,No,White,No,Green,Moderate,Porous,Medium,Yellow,No,Multiple Stem,Slow,2.6,No,No,Long,No,Medium,No,Erect,None,
+79866,Summer,Moderate,None,High,No,Yes,Yes,White,Yes,Dark Green,Dense,Dense,Medium,Black,Yes,Multiple Stem,Moderate,6.0,No,No,Moderate,No,Medium,No,Erect,None,
+37426,Spring and Summer,Moderate,None,Medium,No,No,No,Purple,Yes,Yellow-Green,Porous,Porous,Fine,Black,No,Single Stem,Moderate,5.0,No,No,Moderate,No,None,No,Erect,None,
+37462,Summer,Slow,None,High,No,No,No,Purple,Yes,Green,Moderate,Porous,Coarse,Brown,No,Rhizomatous,Slow,4.5,No,No,Moderate,No,None,No,Erect,None,
+37468,,,,,,,,,,,,,,,,,,,,,,,,,,,
+28769,,,,,,,,,,,,,,,,,,,,,,,,,,,
+28836,,,,,,,,,,,,,,,,,,,,,,,,,,,
+42478,Spring,,None,Medium,No,No,No,Red,Yes,Green,,,Medium,Blue,No,Single Stem,Moderate,5.9,No,No,Moderate,No,None,No,Erect,None,
+42561,,,,,,,,,,,,,,,,,,,,,,,,,,,
+86072,,,,,,,,,,,,,,,,,,,,,,,,,,,
+80872,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45838,Summer and Fall,Slow,None,High,No,No,No,White,No,Green,Moderate,Porous,Coarse,Brown,No,Single Crown,Moderate,1.8,No,No,Long,No,None,No,Erect,None,
+45866,Spring and Summer,Slow,None,Low,No,No,No,White,Yes,Dark Green,Porous,Porous,Medium,Black,Yes,Stoloniferous,Moderate,4.0,No,No,Moderate,No,None,No,Erect,None,
+28891,,,,,,,,,,,,,,,,,,,,,,,,,,,
+27143,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45887,Spring,Slow,None,,No,No,No,White,Yes,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Moderate,2.6,No,No,Short,No,None,No,Erect,None,
+45201,Spring,Slow,None,,No,No,No,Blue,Yes,Green,Moderate,Porous,Coarse,,No,Single Stem,Moderate,2.3,No,No,Moderate,No,None,No,Erect,None,
+92484,,,,,,,,,,,,,,,,,,,,,,,,,,,
+51235,Spring,Slow,None,,No,No,No,Blue,Yes,Green,Porous,Porous,Medium,Black,No,Single Stem,Rapid,2.3,No,No,Short,No,None,No,Erect,None,
+51509,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45953,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45955,Spring,Slow,None,,No,No,No,Red,Yes,Gray-Green,Moderate,Porous,Medium,Brown,No,Single Stem,Moderate,4.9,No,No,Moderate,No,None,No,Erect,None,
+45971,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45974,,,,,,,,,,,,,,,,,,,,,,,,,,,
+71666,,,,,,,,,,,,,,,,,,,,,,,,,,,
+71742,,,,,,,,,,,,,,,,,,,,,,,,,,,
+86182,"Spring, Summer, Fall",Slow,None,Medium,No,No,No,Yellow,Yes,Green,Dense,Porous,Coarse,Brown,No,Single Crown,Rapid,5.0,No,No,Short,No,None,No,Erect,None,
+86339,Spring and Summer,Slow,None,,No,No,No,,Yes,Green,Moderate,Porous,Medium,Brown,No,Multiple Stem,Moderate,3.3,No,No,Moderate,No,None,No,Erect,None,
+56850,,,,,,,,,,,,,,,,,,,,,,,,,,,
+16384,,,,,,,,,,,,,,,,,,,,,,,,,,,
+75287,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38300,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38305,Spring,Slow,None,,No,No,No,Yellow,Yes,Green,Porous,,Fine,Brown,No,Rhizomatous,Moderate,3.9,No,No,Short,No,None,No,Erect,None,
+38436,,,,,,,,,,,,,,,,,,,,,,,,,,,
+57782,,,,,,,,,,,,,,,,,,,,,,,,,,,
+57792,,,,,,,,,,,,,,,,,,,,,,,,,,,
+16390,Spring,Slow,None,,No,No,Yes,Yellow,Yes,Green,Moderate,Porous,Coarse,Brown,No,Bunch,Slow,2.3,No,No,Moderate,No,None,No,Erect,None,
+51852,,,,,,,,,,,,,,,,,,,,,,,,,,,
+51926,Spring and Summer,Slow,None,High,No,No,No,Purple,Yes,Red,Porous,Porous,Fine,Brown,No,Rhizomatous,Moderate,4.0,No,No,Moderate,No,None,No,Erect,None,
+52048,,,,,,,,,,,,,,,,,,,,,,,,,,,
+52088,,,,,,,,,,,,,,,,,,,,,,,,,,,
+52182,,,,,,,,,,,,,,,,,,,,,,,,,,,
+87864,Spring,Slow,None,,No,No,No,Yellow,No,Green,Porous,Porous,Medium,,No,Stoloniferous,Slow,2.6,No,No,Moderate,No,None,No,Erect,None,
+61592,,,,,,,,,,,,,,,,,,,,,,,,,,,
+59981,,,,,,,,,,,,,,,,,,,,,,,,,,,
+54581,,,,,,,,,,,,,,,,,,,,,,,,,,,
+54583,,,,,,,,,,,,,,,,,,,,,,,,,,,
+54611,Spring and Summer,Slow,None,High,No,No,No,Purple,Yes,Green,Moderate,Porous,Medium,Brown,No,Multiple Stem,Rapid,3.0,No,No,Long,No,None,No,Erect,None,
+54638,Spring and Summer,Slow,None,High,No,No,No,Red,Yes,Green,Moderate,Porous,Medium,Brown,No,Single Crown,Moderate,3.0,No,No,Moderate,No,None,No,Erect,None,
+54725,,,,,,,,,,,,,,,,,,,,,,,,,,,
+54789,,,,,,,,,,,,,,,,,,,,,,,,,,,
+54790,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,Yes,Purple,Yes,Green,Dense,Porous,Fine,,No,Stoloniferous,Rapid,0.5,No,No,Moderate,No,None,No,Prostrate,None,
+46245,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72389,,,,,,,,,,,,,,,,,,,,,,,,,,,
+54898,,,,,,,,,,,,,,,,,,,,,,,,,,,
+29031,,,,,,,,,,,,,,,,,,,,,,,,,,,
+61205,Summer,,None,,No,No,Yes,Yellow,No,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,0.1,No,No,Moderate,No,None,No,Prostrate,None,
+61392,Summer,,None,,No,No,No,Green,No,Dark Green,Porous,Porous,Fine,Green,No,Single Crown,Slow,,No,No,Moderate,No,None,No,Decumbent,None,
+61462,Summer,Slow,None,Medium,No,No,No,Red,Yes,Green,Moderate,Porous,Medium,Black,No,Single Crown,Moderate,3.9,No,No,,No,None,No,Erect,None,
+61516,Summer,Slow,None,,No,No,No,White,Yes,Green,Moderate,Porous,Medium,Black,No,Single Crown,Moderate,3.2,No,No,Short,No,None,No,Erect,None,
+29532,Spring,Slow,None,,No,No,No,Blue,Yes,Green,Moderate,Porous,Coarse,,No,Bunch,Moderate,3.2,No,No,Moderate,No,None,No,Erect,None,
+16105,Summer,,None,Medium,No,No,No,Green,No,Green,Porous,Porous,Fine,Brown,No,Rhizomatous,Rapid,,No,No,Short,No,None,No,Prostrate,None,
+46300,Spring and Summer,Slow,None,Medium,No,No,No,Purple,Yes,Gray-Green,Moderate,Porous,Coarse,Green,No,Stoloniferous,Rapid,1.5,No,No,Moderate,No,None,No,Decumbent,None,
+46333,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46345,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46359,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46373,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73194,Spring and Summer,Slow,None,,No,No,No,Yellow,No,Green,Porous,Porous,Medium,Black,No,Multiple Stem,Moderate,2.8,No,No,Short,No,None,No,Erect,None,
+73366,Spring,Slow,None,,No,No,No,Yellow,Yes,Gray-Green,Moderate,Porous,Medium,Yellow,No,Single Stem,Rapid,2.5,No,No,Moderate,No,None,No,Erect,None,
+84572,,,,,,,,,,,,,,,,,,,,,,,,,,,
+39449,,,,,,,,,,,,,,,,,,,,,,,,,,,
+39478,"Fall, Winter and Spring",,None,Medium,No,No,No,Orange,Yes,Green,Porous,Porous,Coarse,Brown,No,Single Stem,Rapid,1.0,No,No,Short,No,None,No,Semi-Erect,None,
+39504,Spring,Moderate,None,,No,Yes,No,Yellow,Yes,Gray-Green,Dense,Dense,Coarse,Brown,No,Rhizomatous,Rapid,8.2,No,No,Short,No,None,No,Erect,None,
+39530,,,,,,,,,,,,,,,,,,,,,,,,,,,
+49040,,,,,,,,,,,,,,,,,,,,,,,,,,,
+15829,Spring,Slow,None,,No,No,No,Yellow,Yes,Green,Moderate,Porous,Medium,,No,Bunch,Moderate,4.9,No,No,Moderate,No,None,No,Erect,None,
+46470,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72090,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72290,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46588,,,,,,,,,,,,,,,,,,,,,,,,,,,
+87946,,,,,,,,,,,,,,,,,,,,,,,,,,,
+88052,,,,,,,,,,,,,,,,,,,,,,,,,,,
+82342,,,,,,,,,,,,,,,,,,,,,,,,,,,
+82366,Spring and Summer,Slow,Low,,No,No,No,Yellow,Yes,Green,Moderate,,Medium,Brown,No,Single Stem,Rapid,6.6,No,No,Moderate,No,Medium,No,Erect,None,
+91720,,,,,,,,,,,,,,,,,,,,,,,,,,,
+58049,,,,,,,,,,,,,,,,,,,,,,,,,,,
+58258,,,,,,,,,,,,,,,,,,,,,,,,,,,
+58330,,,,,,,,,,,,,,,,,,,,,,,,,,,
+39867,Summer,,None,,No,No,No,Yellow,Yes,Green,Moderate,Porous,Coarse,Brown,No,,Rapid,6.0,No,No,,No,None,No,,None,
+39887,,,,,,,,,,,,,,,,,,,,,,,,,,,
+27691,Spring and Summer,Slow,None,High,No,No,No,Blue,Yes,Green,Moderate,Porous,Fine,Black,No,Bunch,Moderate,2.0,No,No,Short,No,None,No,Erect,None,
+27760,,,,,,,,,,,,,,,,,,,,,,,,,,,
+39957,Spring and Summer,Moderate,None,High,No,No,No,Yellow,Yes,Green,Dense,Porous,Coarse,Brown,No,Rhizomatous,Rapid,3.5,No,No,Long,No,None,No,Erect,None,
+39948,,,,,,,,,,,,,,,,,,,,,,,,,,,
+39952,Spring and Summer,Slow,None,High,No,Yes,No,Yellow,Yes,Dark Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,3.0,No,No,Short,No,None,No,Erect,None,
+39995,"Spring, Summer, Fall",Slow,None,High,No,Yes,No,Yellow,Yes,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,3.0,No,No,Short,No,None,No,Erect,None,
+39998,Summer,Slow,None,,No,Yes,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Bunch,Moderate,8.2,No,No,Moderate,No,None,No,Erect,None,
+40024,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40070,Spring and Summer,Rapid,None,Medium,No,No,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Rapid,2.0,No,No,Short,No,None,No,Decumbent,None,
+40081,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40102,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40105,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40120,Spring and Summer,Moderate,None,High,No,No,No,Yellow,Yes,Green,Dense,Porous,Coarse,Brown,No,Rhizomatous,Rapid,3.3,No,No,Moderate,No,None,No,Erect,None,
+40183,,,,,,,,,,,,,,,,,,,,,,,,,,,
+30717,Spring and Summer,Slow,None,Low,No,No,No,White,Yes,Green,Porous,Porous,Fine,Brown,No,Single Crown,Moderate,1.5,No,No,Short,No,None,No,Erect,None,
+46776,Spring and Summer,Slow,None,High,No,No,No,Purple,Yes,Green,Moderate,Porous,Coarse,Brown,No,Single Crown,Moderate,25.0,No,No,Moderate,No,None,No,Erect,None,
+40476,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40483,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,Purple,Yes,Gray-Green,Moderate,Moderate,Medium,Brown,No,Rhizomatous,Moderate,5.0,No,No,Short,No,None,No,Erect,None,
+40672,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40703,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,White,Yes,Green,Porous,Porous,Coarse,Brown,No,Single Crown,Moderate,5.0,No,No,Short,No,None,No,Semi-Erect,None,
+40770,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40782,"Spring, Summer, Fall",Moderate,None,Medium,No,Yes,No,Purple,Yes,Green,Porous,Porous,Fine,Brown,No,Rhizomatous,Moderate,6.0,No,No,Short,No,None,No,Erect,None,
+40799,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40863,"Spring, Summer, Fall",Moderate,None,Medium,No,Yes,No,Purple,Yes,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,3.0,No,No,Short,No,None,No,Erect,None,
+40911,"Spring, Summer, Fall",Slow,None,Medium,No,Yes,No,Blue,Yes,Green,Moderate,Porous,Medium,Brown,No,Rhizomatous,Slow,8.1,No,No,Moderate,No,None,No,Erect,None,
+16426,Spring,Slow,None,,No,No,Yes,Purple,Yes,Green,Moderate,Porous,Coarse,,No,Rhizomatous,Moderate,2.0,No,No,Moderate,No,None,No,Erect,None,
+41140,Spring and Fall,Moderate,None,Low,No,No,No,Yellow,Yes,Green,Porous,Porous,Coarse,Brown,No,Single Crown,Rapid,0.5,No,No,Short,No,None,No,Prostrate,None,
+46862,Spring and Summer,Slow,None,,No,No,No,Purple,Yes,White-Gray,Porous,Porous,Medium,Brown,No,Single Stem,Moderate,3.3,No,No,Moderate,No,None,No,Erect,None,
+73609,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73633,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73640,,,,,,,,,,,,,,,,,,,,,,,,,,,
+73649,,,,,,,,,,,,,,,,,,,,,,,,,,,
+92518,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17027,Spring,Slow,None,,No,No,No,Blue,Yes,Green,Porous,Porous,Medium,Black,No,Single Stem,Rapid,1.1,No,No,Short,No,None,No,Erect,None,
+73664,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46917,,,,,,,,,,,,,,,,,,,,,,,,,,,
+29217,,,,,,,,,,,,,,,,,,,,,,,,,,,
+15946,Summer,,None,Low,No,No,Yes,,No,Green,,,Fine,Green,No,Stoloniferous,Rapid,1.0,No,No,Short,No,None,No,Decumbent,None,
+47330,,,,,,,,,,,,,,,,,,,,,,,,,,,
+41717,Summer,Slow,None,,No,Yes,No,Purple,Yes,Dark Green,Moderate,Porous,Medium,Brown,No,Multiple Stem,Moderate,6.6,No,No,Short,No,None,No,Erect,None,
+52579,Spring and Summer,Slow,None,Medium,No,No,Yes,Blue,Yes,Green,Porous,Porous,Fine,Yellow,No,Rhizomatous,Rapid,0.8,No,No,Short,No,None,No,Decumbent,None,
+69604,,,,,,,,,,,,,,,,,,,,,,,,,,,
+69719,,,,,,,,,,,,,,,,,,,,,,,,,,,
+69760,Spring and Summer,Slow,None,Low,No,No,No,Yellow,Yes,Dark Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,1.3,No,No,Short,No,None,No,Decumbent,None,
+69816,Spring,Moderate,None,Low,No,No,No,Purple,Yes,Green,Porous,Porous,Medium,Brown,No,Rhizomatous,Moderate,0.3,No,No,Short,No,None,No,Semi-Erect,None,
+69824,,,,,,,,,,,,,,,,,,,,,,,,,,,
+27210,,,,,,,,,,,,,,,,,,,,,,,,,,,
+74665,,,,,,,,,,,,,,,,,,,,,,,,,,,
+92814,Spring and Summer,,None,High,Yes,Yes,No,White,No,Green,Dense,Porous,Coarse,Brown,Yes,Multiple Stem,Rapid,60.0,No,No,Short,No,None,Yes,Erect,None,35
+92846,Spring and Summer,,None,High,Yes,Yes,No,Red,Yes,Green,Dense,Porous,Medium,Red,Yes,Single Stem,Rapid,68.0,No,No,Short,No,None,Yes,Rounded,Slight,35
+92860,Spring and Summer,,None,High,Yes,Yes,No,Yellow,Yes,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Rapid,90.0,No,No,Moderate,No,None,Yes,Rounded,None,45
+92865,Spring and Summer,,None,High,No,Yes,No,Green,No,Green,Dense,Porous,Coarse,Brown,No,Single Stem,Slow,100.0,Yes,No,Long,No,None,Yes,Erect,None,20
+93131,Spring and Summer,,None,High,No,Yes,No,Yellow,Yes,Green,Dense,Porous,Coarse,Brown,Yes,Single Stem,Moderate,65.0,No,No,Long,No,None,Yes,Erect,Severe,30
+69950,Spring and Summer,,None,High,No,No,No,Yellow,No,Green,Dense,Porous,Medium,Brown,No,Single Stem,Slow,75.0,Yes,No,Moderate,No,None,No,Erect,None,25
+69974,Spring and Summer,,None,High,No,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Moderate,60.0,No,No,Moderate,No,None,Yes,Erect,None,15
+69997,Spring and Summer,,None,Medium,Yes,No,No,Brown,No,Green,Moderate,Porous,Medium,Brown,No,Multiple Stem,Rapid,70.0,No,No,Short,No,None,Yes,Erect,None,35
+70004,Spring and Summer,,None,Medium,Yes,Yes,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Rapid,70.0,No,No,Moderate,No,None,Yes,Erect,None,40
+70649,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,Yes,Single Stem,Slow,85.0,No,No,Moderate,No,None,Yes,Erect,None,18
+70586,Spring and Summer,,None,High,No,Yes,No,Green,No,Green,Dense,Porous,Coarse,Brown,Yes,Single Stem,Slow,75.0,No,No,Moderate,No,None,Yes,Erect,None,30
+70594,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,Yes,Single Stem,Slow,80.0,No,No,Moderate,No,None,Yes,Erect,None,30
+70608,Spring and Summer,,None,High,No,No,No,Yellow,No,Yellow-Green,Dense,Porous,Fine,Brown,Yes,Single Stem,Slow,120.0,No,No,Long,No,None,Yes,Erect,None,35
+70622,Spring and Summer,,None,High,No,Yes,No,Yellow,Yes,Green,Moderate,Porous,Coarse,Brown,Yes,Single Stem,Slow,75.0,No,No,Long,No,None,Yes,Erect,None,15
+49194,Spring,,None,High,No,Yes,No,White,Yes,Dark Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Rapid,60.0,No,No,Long,No,Low,Yes,Erect,None,20
+70944,Spring and Summer,,None,High,No,Yes,No,Green,No,Green,Dense,Porous,Coarse,Purple,No,Single Stem,Rapid,60.0,No,No,Moderate,No,None,Yes,Erect,None,26
+64536,Spring and Summer,,None,High,Yes,Yes,Yes,Yellow,No,Dark Green,Moderate,Porous,Medium,Orange,Yes,Single Crown,Slow,55.0,No,No,Long,No,None,Yes,Irregular,None,25
+70143,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Green,Dense,Dense,Medium,Brown,No,Single Stem,Slow,80.0,No,No,Long,No,None,Yes,Erect,None,30
+49739,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Fine,Brown,Yes,Single Stem,Moderate,90.0,No,No,Moderate,No,None,Yes,Erect,None,40
+49771,Spring and Summer,,None,Medium,No,No,No,White,No,Green,Dense,Porous,Coarse,Brown,No,Single Stem,Slow,65.0,No,No,Moderate,No,None,Yes,Erect,None,20
+49774,Spring and Summer,,None,High,Yes,Yes,No,Green,Yes,Yellow-Green,Dense,Moderate,Coarse,Brown,No,Single Crown,Rapid,80.0,No,No,Short,No,None,Yes,Irregular,None,35
+79383,Spring and Summer,,None,Medium,Yes,Yes,No,Yellow,No,Green,Moderate,Porous,Medium,Green,Yes,Single Stem,Rapid,70.0,No,No,Moderate,No,None,Yes,Rounded,None,35
+74958,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Green,Dense,Dense,Coarse,Red,Yes,Single Stem,Slow,40.0,No,Yes,Moderate,No,None,Yes,Erect,None,20
+70665,Spring and Summer,,None,High,Yes,Yes,No,Green,No,Green,Moderate,Porous,Coarse,Brown,Yes,Single Stem,Rapid,80.0,Yes,No,Short,No,None,Yes,Erect,Slight,20
+70684,Spring,,None,High,Yes,No,No,Yellow,No,Green,Porous,Porous,Medium,Brown,Yes,Single Stem,Rapid,100.0,Yes,No,Moderate,No,None,Yes,Erect,Slight,35
+15261,Spring and Summer,,None,High,No,No,No,Green,No,Green,Dense,Dense,Medium,White,Yes,Single Stem,Slow,50.0,Yes,No,Moderate,No,None,Yes,Conical,Slight,25
+70557,Spring and Summer,,None,High,Yes,Yes,No,Green,No,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Rapid,100.0,No,No,Long,No,None,Yes,Erect,None,45
+71551,Spring and Summer,,None,High,Yes,Yes,No,Yellow,Yes,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Rapid,120.0,No,No,Moderate,No,None,Yes,Erect,None,50
+71553,Spring and Summer,,None,High,No,Yes,No,Yellow,Yes,Green,Dense,Porous,Coarse,Red,Yes,Single Stem,Rapid,100.0,No,No,Moderate,No,None,Yes,Irregular,None,40
+70892,Spring and Summer,,None,High,Yes,No,No,Green,No,Green,Moderate,Porous,Medium,Purple,Yes,Single Stem,Moderate,70.0,No,No,Moderate,No,None,Yes,Rounded,None,45
+75248,Spring and Summer,,None,High,Yes,Yes,No,Green,No,Green,Dense,Porous,Coarse,Blue,No,Single Stem,Moderate,95.0,No,No,Moderate,No,None,Yes,Erect,None,30
+65298,Spring and Summer,,None,High,Yes,Yes,No,White,Yes,Green,Moderate,Porous,Coarse,Brown,No,Single Stem,Slow,35.0,No,No,Moderate,No,None,Yes,Columnar,None,20
+15448,Spring and Summer,,None,High,No,No,No,Yellow,No,Green,Dense,Dense,Medium,Brown,No,Single Stem,Rapid,100.0,No,Yes,Moderate,No,None,Yes,Conical,None,60
+15545,Spring and Summer,,None,High,No,No,No,Yellow,No,Green,Dense,Dense,Medium,Brown,No,Single Stem,,50.0,No,Yes,Long,No,None,No,Conical,None,25
+15556,Spring and Summer,,None,High,No,No,Yes,Green,No,Yellow-Green,Moderate,Moderate,Medium,Brown,Yes,Single Stem,Rapid,80.0,No,Yes,Moderate,No,None,Yes,Erect,None,20
+15568,Spring and Summer,,None,High,No,No,No,Red,No,Dark Green,Dense,Dense,Fine,Brown,Yes,Single Stem,Rapid,150.0,No,Yes,Moderate,No,None,No,Erect,None,40
+15576,Spring and Summer,,None,High,No,No,Yes,,No,Green,Dense,Dense,Medium,Brown,No,Single Stem,Rapid,100.0,No,Yes,Moderate,No,None,No,Rounded,None,50
+15586,Spring and Summer,,None,High,No,No,No,,No,Green,Dense,Dense,Coarse,Brown,No,Single Stem,Rapid,70.0,No,Yes,Moderate,No,None,No,Irregular,None,25
+70568,Spring and Summer,,None,High,Yes,Yes,No,Red,No,Green,Dense,Porous,Coarse,Brown,Yes,Single Stem,Rapid,100.0,No,No,Long,No,None,Yes,Erect,None,65
+67422,Spring and Summer,,None,High,Yes,No,No,Yellow,No,Green,Moderate,Porous,Medium,White,Yes,Single Stem,Rapid,90.0,No,No,Short,No,None,Yes,Erect,None,80
+67466,Spring and Summer,,None,Medium,Yes,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Rapid,65.0,No,No,Short,No,None,Yes,Erect,None,40
+67496,Spring and Summer,,None,Medium,Yes,No,Yes,Blue,No,Green,Dense,Porous,Medium,White,No,Single Stem,Rapid,65.0,No,No,Short,No,None,Yes,Rounded,None,40
+90650,Spring and Summer,,Low,High,Yes,No,No,White,Yes,Green,Moderate,Porous,Medium,Black,Yes,Multiple Stem,Rapid,80.0,No,No,Moderate,No,None,Yes,Erect,Severe,40
+70172,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Slow,100.0,No,No,Long,No,None,Yes,Erect,None,25
+70193,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Rapid,100.0,No,No,Long,No,None,Yes,Erect,None,30
+70219,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Rapid,70.0,No,No,Long,No,None,Yes,Erect,None,30
+70250,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,No,Single Stem,Moderate,75.0,No,No,Long,No,None,Yes,Erect,None,35
+70379,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Moderate,80.0,No,No,Moderate,No,None,Yes,Erect,None,35
+70412,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Moderate,Medium,Brown,No,Colonizing,Rapid,100.0,No,No,Moderate,No,None,Yes,Erect,None,40
+70432,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Green,Dense,Porous,Fine,Brown,Yes,Single Stem,Rapid,100.0,No,No,Long,No,None,Yes,Erect,None,60
+70387,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Moderate,Porous,Coarse,Brown,Yes,Single Stem,Slow,73.0,No,No,Long,No,None,Yes,Erect,None,25
+70448,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Medium,Brown,Yes,Single Stem,Moderate,81.0,No,No,Long,No,None,Yes,Erect,None,36
+70488,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,No,Single Stem,Slow,60.0,No,No,Long,No,None,Yes,Erect,Moderate,25
+70523,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,Yes,Single Stem,Moderate,80.0,No,No,Moderate,No,None,Yes,Erect,None,25
+82163,Spring,,None,Medium,Yes,No,No,White,Yes,Green,Porous,Porous,Medium,Black,Yes,Multiple Stem,Rapid,60.0,No,No,Short,No,Medium,Yes,Erect,None,40
+68068,Spring and Summer,,None,Medium,Yes,No,No,,No,Green,Moderate,Porous,Medium,,No,Multiple Stem,Rapid,100.0,No,No,Short,No,None,Yes,Erect,None,50
+71455,Spring and Summer,,None,High,Yes,Yes,No,Yellow,Yes,Green,Moderate,Porous,Coarse,Blue,No,Single Stem,Moderate,75.0,No,No,Moderate,No,None,Yes,Irregular,None,24
+66729,Spring and Summer,,None,High,Yes,Yes,No,Yellow,Yes,Green,Dense,Porous,Medium,Brown,No,Single Stem,Moderate,100.0,No,No,Moderate,No,None,Yes,Erect,None,60
+15604,Spring and Summer,,None,High,No,No,No,Yellow,No,Dark Green,Dense,Dense,Fine,Brown,No,Single Stem,Slow,105.0,No,Yes,Long,No,None,No,Erect,None,22
+70987,Spring and Summer,,None,High,Yes,Yes,No,Green,No,Green,Dense,Porous,Coarse,Brown,No,Single Stem,Rapid,120.0,No,No,Moderate,No,None,Yes,Erect,None,50
+71006,Spring and Summer,,None,High,Yes,No,No,Yellow,No,Green,Moderate,Porous,Coarse,Brown,No,Single Stem,Rapid,85.0,No,No,Moderate,No,None,Yes,Erect,None,45
+69928,Spring and Summer,,None,High,No,No,No,,No,Green,Dense,Porous,Coarse,Brown,No,Multiple Stem,Rapid,30.0,No,No,Moderate,No,Medium,No,Erect,None,12
+76871,Summer,,None,High,Yes,Yes,No,Purple,Yes,Yellow-Green,Dense,Porous,Fine,Brown,Yes,Multiple Stem,Slow,15.0,No,No,Moderate,No,Medium,Yes,Rounded,Slight,6
+88768,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Moderate,Porous,Coarse,Red,Yes,Colonizing,Moderate,5.0,No,No,Moderate,No,None,No,Erect,None,5
+88782,,,None,Medium,No,Yes,No,White,Yes,Red,Moderate,Moderate,Medium,Blue,No,Thicket Forming,,6.0,No,No,Short,No,None,No,Erect,Slight,15
+71330,,,,,,,,,,,,,,,,,,,,,,,,,,,
+49863,,,,,,,,,,,,,,,,,,,,,,,,,,,
+87033,Spring and Summer,,None,High,No,No,No,Blue,No,Green,Dense,Moderate,Medium,Brown,No,Multiple Stem,Slow,3.0,No,No,Moderate,No,Low,Yes,Semi-Erect,None,3
+47594,Spring,,None,Medium,No,No,No,White,Yes,Green,Moderate,Porous,Coarse,White,Yes,Multiple Stem,Moderate,15.0,No,No,Short,No,None,Yes,Erect,None,15
+64788,Spring and Summer,,None,High,No,No,No,White,No,Green,Moderate,Porous,Coarse,Brown,Yes,Multiple Stem,Moderate,16.0,No,No,Moderate,No,None,No,Erect,None,16
+75152,Spring and Summer,,None,High,Yes,No,No,White,Yes,Green,Dense,Moderate,Coarse,Green,Yes,Stoloniferous,Moderate,7.0,No,No,Moderate,No,None,No,Semi-Erect,None,7
+75196,Spring and Summer,,None,High,No,No,No,White,Yes,Green,Dense,Moderate,Coarse,Brown,Yes,Rhizomatous,Moderate,10.0,No,No,Moderate,No,None,Yes,Erect,None,6
+70074,Spring and Summer,,None,High,No,No,No,White,No,Green,Moderate,Porous,Coarse,Brown,Yes,Multiple Stem,Moderate,10.0,No,No,Short,No,None,No,Erect,None,10
+70081,Spring and Summer,,None,,No,No,No,Yellow,No,Green,Dense,Moderate,Coarse,Brown,Yes,Multiple Stem,Moderate,15.0,No,No,Long,No,None,Yes,Erect,None,15
+42692,Spring,,None,High,No,No,No,Purple,Yes,Dark Green,Dense,Moderate,Medium,Brown,No,Multiple Stem,Slow,2.4,No,No,Long,No,None,Yes,Erect,None,2
+65141,Spring,,None,High,No,No,No,White,Yes,Green,Moderate,Porous,Medium,Brown,No,Multiple Stem,Moderate,13.0,No,No,Moderate,No,None,Yes,Erect,None,13
+68275,Spring and Summer,,None,High,Yes,No,No,Green,No,Green,Dense,Moderate,Coarse,Brown,No,Multiple Stem,Rapid,12.0,No,No,Moderate,No,None,Yes,Erect,None,12
+75018,Spring and Summer,,None,Medium,No,Yes,Yes,Green,No,Dark Green,Porous,Porous,Fine,Yellow,Yes,Multiple Stem,Moderate,6.0,No,No,Moderate,No,None,Yes,Erect,None,8
+87257,,,None,,No,No,No,Yellow,No,Green,Moderate,Porous,Coarse,Black,No,Single Crown,Moderate,20.0,No,No,Short,No,None,No,Erect,,35
+65159,"Spring, Summer, Fall",,None,High,No,Yes,No,White,Yes,Dark Green,Dense,Dense,Coarse,Red,Yes,Stoloniferous,Slow,0.5,No,No,Long,No,None,Yes,Prostrate,None,
+65162,Spring and Summer,,None,High,No,No,No,White,Yes,Green,Dense,Moderate,Medium,Black,No,Multiple Stem,Slow,4.0,No,No,Long,No,None,Yes,Erect,None,2
+70550,Spring and Summer,,None,Medium,No,No,No,Yellow,Yes,Green,Dense,Porous,Coarse,Brown,Yes,Multiple Stem,Slow,20.0,No,No,Long,No,None,Yes,Semi-Erect,None,15
+88398,,,,,,,,,,,,,,,,,,,,,,,,,,,
+68451,Spring,,None,,No,No,No,Yellow,No,Green,Dense,Moderate,Fine,Brown,No,Multiple Stem,Slow,6.6,No,No,Moderate,No,None,Yes,Erect,None,
+68521,Spring and Summer,,None,High,No,No,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Single Crown,Moderate,3.2,No,No,Moderate,No,None,No,Erect,None,
+74925,Spring and Summer,,None,,Yes,No,No,Yellow,No,Dark Green,Dense,Moderate,Medium,Red,Yes,Multiple Stem,Rapid,33.0,No,No,Moderate,No,None,Yes,Erect,Slight,33
+74928,Summer and Fall,,None,High,No,No,Yes,White,No,Green,Moderate,Porous,Coarse,Black,Yes,Multiple Stem,Slow,8.0,No,Yes,Long,No,None,No,Erect,None,5
+74975,Spring and Summer,,None,High,No,Yes,No,White,No,Green,Dense,Moderate,Coarse,Red,Yes,Multiple Stem,Moderate,9.0,No,No,Moderate,No,None,Yes,Climbing,None,6
+88116,Spring,,None,Medium,No,No,No,White,Yes,Green,Porous,Porous,Medium,Brown,No,Stoloniferous,Slow,10.0,No,No,Short,No,None,No,Erect,None,10
+65203,Spring and Summer,,None,High,No,No,No,Purple,Yes,Green,Moderate,Moderate,Coarse,Brown,No,Multiple Stem,Slow,6.0,No,Yes,Long,No,None,Yes,Semi-Erect,None,5
+65252,Spring and Summer,,None,High,No,Yes,Yes,White,Yes,Green,Dense,Dense,Coarse,Brown,Yes,Multiple Stem,Moderate,4.0,No,Yes,Moderate,No,None,Yes,Semi-Erect,None,4
+71391,Spring and Summer,,None,Medium,No,No,No,White,Yes,Green,Moderate,Porous,Coarse,Red,No,Multiple Stem,Slow,12.0,No,No,Long,No,None,Yes,Erect,None,12
+70717,Spring and Summer,,None,High,No,No,No,White,No,Green,,Moderate,Coarse,Blue,Yes,Rhizomatous,Moderate,10.0,No,Yes,Long,No,None,No,Erect,None,10
+70735,Spring and Summer,,None,High,No,No,No,Yellow,No,Green,Dense,Moderate,Coarse,Blue,Yes,Colonizing,Slow,7.0,No,No,Long,No,Medium,Yes,Semi-Erect,None,9
+88445,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90185,Spring and Summer,,None,High,No,Yes,No,Purple,No,Green,Dense,Moderate,Medium,Orange,Yes,Multiple Stem,Slow,10.0,No,No,Moderate,No,None,Yes,Erect,None,10
+65308,,,,,,,,,,,,,,,,,,,,,,,,,,,
+65346,,,,,,,,,,,,,,,,,,,,,,,,,,,
+65369,Spring and Summer,,None,High,No,Yes,Yes,Red,Yes,Dark Green,Dense,Dense,Coarse,Brown,No,Multiple Stem,Slow,25.0,Yes,Yes,Long,No,None,Yes,Semi-Erect,Moderate,15
+65380,Spring and Summer,,None,High,No,No,No,Purple,Yes,Green,Moderate,Moderate,Medium,Brown,No,Multiple Stem,Moderate,10.0,No,No,Moderate,No,None,Yes,Erect,None,4
+65385,,,,,,,,,,,,,,,,,,,,,,,,,,,
+65397,Spring,,None,,No,No,No,Red,Yes,Green,Moderate,Porous,Medium,,No,Multiple Stem,Slow,16.0,No,No,Moderate,No,None,No,Erect,None,13
+92934,,,,,,,,,,,,,,,,,,,,,,,,,,,
+92952,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,Yes,Rhizomatous,Moderate,8.0,No,No,Moderate,No,None,Yes,Erect,None,8
+92963,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,Yes,Rhizomatous,Moderate,12.0,No,No,Short,No,None,Yes,Erect,None,12
+88312,,,,,,,,,,,,,,,,,,,,,,,,,,,
+82146,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90793,Spring and Summer,,None,,No,No,No,White,Yes,Green,Dense,Moderate,Medium,Red,Yes,Multiple Stem,Moderate,5.0,No,No,Moderate,No,None,Yes,Erect,None,5
+90894,Summer,,Medium,,No,No,No,Red,Yes,Green,Moderate,Porous,Fine,Yellow,Yes,Rhizomatous,Moderate,8.2,No,No,Long,No,None,Yes,Erect,None,8
+90954,Spring and Summer,,None,Medium,No,Yes,No,Purple,Yes,Green,Dense,Moderate,Medium,Red,Yes,Rhizomatous,Moderate,6.0,No,No,Moderate,No,None,Yes,Semi-Erect,None,6
+91009,Spring and Summer,,None,Low,No,No,No,White,Yes,Green,Moderate,Porous,Coarse,Black,Yes,Thicket Forming,Rapid,6.0,No,No,Short,No,None,Yes,Erect,None,6
+91167,Spring and Summer,,None,Medium,No,No,No,White,Yes,Green,Dense,Porous,Coarse,Black,Yes,Thicket Forming,Rapid,3.0,No,No,Short,No,None,Yes,Prostrate,None,
+91250,Spring,,None,,No,No,No,White,Yes,Gray-Green,Dense,Moderate,Medium,Black,Yes,Single Stem,Moderate,2.0,No,No,Moderate,No,None,Yes,Prostrate,None,
+91407,Spring and Summer,,None,Low,No,No,No,White,Yes,Green,Moderate,Porous,Coarse,Purple,Yes,Thicket Forming,Rapid,6.0,No,No,Short,No,None,Yes,Erect,None,5
+91409,Spring and Summer,,None,High,No,No,No,Purple,Yes,Green,Dense,Porous,Coarse,Red,Yes,Thicket Forming,Rapid,5.0,No,No,Short,No,None,Yes,Semi-Erect,None,5
+67871,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Dark Green,Dense,Moderate,Coarse,Brown,No,Multiple Stem,Rapid,10.0,No,No,Moderate,No,None,Yes,Semi-Erect,None,10
+42834,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Dense,Porous,Medium,Blue,Yes,Multiple Stem,Rapid,7.0,No,No,Moderate,No,None,Yes,Erect,None,7
+42863,,,,,,,,,,,,,,,,,,,,,,,,,,,
+91786,Spring and Summer,,None,Medium,No,No,No,White,Yes,Green,Dense,Moderate,Fine,Brown,No,Multiple Stem,Moderate,3.0,No,No,Moderate,No,None,Yes,Semi-Erect,None,3
+42905,Spring and Summer,,None,High,No,Yes,Yes,White,No,Green,Dense,Moderate,Coarse,Red,Yes,Rhizomatous,Moderate,2.0,No,No,Moderate,No,None,Yes,Erect,None,2
+65417,Spring and Summer,,None,Medium,No,No,No,White,No,Green,Porous,Porous,Medium,Blue,Yes,Multiple Stem,Moderate,2.0,No,No,Moderate,No,None,Yes,Erect,None,1
+65446,Spring and Summer,,None,Medium,No,Yes,No,White,No,Green,Dense,Moderate,Medium,Blue,Yes,Multiple Stem,Moderate,12.0,No,No,Moderate,No,None,Yes,Erect,None,12
+42933,Spring and Summer,,None,Medium,Yes,Yes,No,White,Yes,Green,Moderate,Porous,Medium,Red,Yes,Multiple Stem,Slow,6.0,No,No,Long,No,None,Yes,Erect,None,6
+42949,,,,,,,,,,,,,,,,,,,,,,,,,,,
+42980,Spring and Summer,,None,High,Yes,Yes,No,White,Yes,Green,Moderate,Porous,Coarse,Black,Yes,Multiple Stem,Slow,10.0,No,No,Long,No,None,Yes,Erect,None,10
+42987,,,,,,,,,,,,,,,,,,,,,,,,,,,
+42988,Spring and Summer,,None,Medium,Yes,No,No,White,Yes,Green,Moderate,Porous,Medium,Blue,No,Multiple Stem,Slow,15.0,No,No,Long,No,None,Yes,Erect,None,15
+43016,Spring and Summer,,None,Medium,Yes,Yes,No,White,Yes,Green,Moderate,Porous,Medium,Black,Yes,Multiple Stem,Slow,16.0,No,No,Long,No,None,Yes,Erect,None,16
+73676,,,,,,,,,,,,,,,,,,,,,,,,,,,
+92842,Spring and Summer,,None,High,No,Yes,Yes,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Slow,35.0,Yes,No,Short,No,None,Yes,Erect,None,25
+92875,Spring and Summer,,None,High,Yes,Yes,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,No,Multiple Stem,Moderate,25.0,No,No,Moderate,No,None,Yes,Erect,None,25
+69903,Spring and Summer,,None,High,No,No,No,,No,Green,Moderate,Porous,Coarse,Brown,No,Thicket Forming,Rapid,25.0,No,No,Short,No,Medium,No,Erect,None,15
+88664,Spring and Summer,,None,Medium,No,Yes,No,White,Yes,Dark Green,Dense,Porous,Fine,Red,Yes,Single Stem,Slow,36.0,No,No,Moderate,No,None,Yes,Erect,None,25
+88673,Spring and Summer,,None,Medium,No,Yes,Yes,White,Yes,Green,Dense,Porous,Coarse,Purple,Yes,Multiple Stem,Moderate,23.0,No,No,Long,No,None,Yes,Erect,None,20
+88685,Spring and Summer,,None,High,Yes,Yes,No,White,Yes,Green,Moderate,Porous,Medium,Purple,Yes,Multiple Stem,Moderate,35.0,No,No,Short,No,None,Yes,Erect,None,30
+74685,Spring and Summer,,None,High,Yes,No,No,White,Yes,Green,Porous,Porous,Coarse,Black,No,Multiple Stem,Moderate,20.0,No,No,Moderate,No,None,Yes,Erect,Slight,20
+71503,Spring and Summer,,None,High,Yes,Yes,No,Purple,No,Dark Green,Moderate,Porous,Coarse,Brown,No,Single Stem,Slow,25.0,No,No,Short,No,None,Yes,Erect,None,25
+70066,Spring and Summer,,None,High,No,Yes,No,Orange,Yes,Green,Dense,Porous,Medium,Brown,No,Multiple Stem,Slow,30.0,No,No,Short,No,None,Yes,Erect,None,18
+70117,Spring and Summer,,None,High,Yes,No,No,Yellow,No,Green,Dense,Porous,Coarse,Brown,Yes,Multiple Stem,Moderate,20.0,No,No,Short,No,None,Yes,Erect,None,14
+70928,Spring and Summer,,None,High,No,Yes,No,Green,No,Green,Moderate,Porous,Medium,Orange,No,Single Stem,Moderate,80.0,Yes,No,Moderate,No,None,Yes,Erect,None,35
+78328,Spring and Summer,,None,Medium,No,No,No,Purple,Yes,Green,Moderate,Porous,Coarse,Brown,Yes,Multiple Stem,Slow,30.0,No,No,Short,No,None,Yes,Erect,None,25
+49693,Spring and Summer,,None,High,No,No,No,White,Yes,Green,Dense,Porous,Medium,Blue,Yes,Multiple Stem,Slow,25.0,No,No,Short,No,None,No,Erect,None,20
+75150,Spring and Summer,,None,High,Yes,Yes,No,White,Yes,Dark Green,Dense,Porous,Medium,Black,Yes,Multiple Stem,Moderate,25.0,No,No,Moderate,No,None,Yes,Erect,None,25
+75171,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Porous,Porous,Medium,Red,Yes,Multiple Stem,Moderate,30.0,No,No,Short,No,None,Yes,Erect,,20
+75174,Spring and Summer,,None,Medium,No,Yes,No,White,Yes,Green,Moderate,Porous,Fine,Black,Yes,Thicket Forming,Moderate,16.0,No,No,Moderate,No,None,Yes,Erect,None,16
+89092,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Dense,Moderate,Medium,Red,Yes,Single Stem,Moderate,30.0,No,No,Long,No,None,Yes,Erect,None,30
+89186,,,,,,,,,,,,,,,,,,,,,,,,,,,
+89404,Spring and Summer,,None,Medium,No,Yes,No,White,Yes,Green,Moderate,Porous,Medium,Red,Yes,Single Stem,Moderate,30.0,No,No,Long,No,None,Yes,Erect,None,25
+89605,Spring and Summer,,None,Medium,Yes,Yes,No,White,Yes,Yellow-Green,Dense,Moderate,Fine,Red,Yes,Multiple Stem,Moderate,30.0,No,No,Long,No,None,Yes,Erect,None,24
+75020,Spring and Summer,,Low,High,No,No,No,Purple,No,Dark Green,Moderate,Porous,Coarse,Red,No,Multiple Stem,Slow,10.0,No,No,Short,No,None,No,Erect,Moderate,25
+74982,Spring and Summer,,None,High,Yes,Yes,No,White,No,Green,Moderate,Moderate,Coarse,Red,Yes,Multiple Stem,Slow,25.0,No,Yes,Long,No,None,Yes,Erect,None,20
+71577,Spring,,None,High,Yes,No,No,White,Yes,Green,Porous,Porous,Coarse,Red,Yes,Single Stem,Moderate,30.0,No,No,Short,No,None,Yes,Erect,None,30
+71581,Spring and Summer,,None,High,Yes,No,Yes,White,Yes,Dark Green,Moderate,Moderate,Medium,Black,Yes,Single Stem,Moderate,60.0,No,Yes,Moderate,No,None,Yes,Climbing,None,40
+70102,Spring and Summer,,None,High,Yes,No,No,Yellow,No,Green,Moderate,Porous,Medium,Brown,No,Single Stem,Slow,45.0,No,No,Short,No,None,Yes,Erect,None,20
+90536,Spring and Summer,,None,Medium,No,No,No,White,Yes,Green,Dense,Moderate,Medium,Red,Yes,Single Stem,Moderate,24.0,No,No,Long,No,None,Yes,Erect,Slight,24
+90538,Spring and Summer,,None,Medium,No,No,No,White,Yes,Green,Dense,Porous,Medium,Red,Yes,Multiple Stem,Moderate,12.0,No,No,Long,No,None,Yes,Semi-Erect,Slight,12
+90621,Spring and Summer,,None,High,Yes,No,No,White,Yes,Green,Dense,Porous,Medium,Red,Yes,Single Stem,Rapid,30.0,No,No,Short,No,None,Yes,Erect,Moderate,25
+90686,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Dense,Porous,Medium,Black,Yes,Multiple Stem,Rapid,25.0,Yes,No,Short,No,None,Yes,Erect,Severe,15
+70314,,,,,,,,,,,,,,,,,,,,,,,,,,,
+70367,Spring and Summer,,None,High,No,Yes,No,Yellow,No,Dark Green,Moderate,Porous,Coarse,Brown,No,Single Stem,Slow,25.0,No,No,Long,No,None,Yes,Erect,None,20
+91750,Spring and Summer,,None,High,No,Yes,No,White,Yes,Green,Moderate,Porous,Fine,Orange,Yes,Single Stem,Moderate,40.0,No,No,Moderate,No,None,Yes,Erect,None,30
+90051,,,,,,,,,,,,,,,,,,,,,,,,,,,
+15299,Spring and Summer,,None,High,No,No,No,,No,Green,Dense,Dense,Fine,Brown,No,Single Stem,Slow,50.0,No,Yes,Long,No,None,No,Conical,None,25
+70952,,,,,,,,,,,,,,,,,,,,,,,,,,,
+76939,Spring and Summer,Slow,None,Low,No,No,No,Purple,Yes,Green,Porous,Porous,Medium,Brown,No,Single Crown,Rapid,1.0,No,No,Moderate,No,Medium,No,Climbing,None,
+71241,,,,,,,,,,,,,,,,,,,,,,,,,,,
+49180,,,,,,,,,,,,,,,,,,,,,,,,,,,
+49184,Spring and Summer,,None,High,No,Yes,No,Red,Yes,Green,Moderate,Porous,Coarse,Brown,Yes,Single Crown,Rapid,2.0,No,No,Long,No,None,Yes,Climbing,None,
+75002,Spring and Summer,,None,High,No,Yes,No,White,No,Green,,,Coarse,Orange,Yes,Thicket Forming,Rapid,15.0,No,No,Moderate,No,None,No,Columnar,None,
+72862,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72874,Spring and Summer,,None,Medium,No,No,No,White,Yes,Green,Porous,Porous,Coarse,Black,No,Single Crown,Slow,15.0,No,No,Long,No,None,Yes,Climbing,None,
+27319,,,,,,,,,,,,,,,,,,,,,,,,,,,
+42803,Spring,,None,High,No,No,No,Red,Yes,Green,Dense,Dense,Medium,Black,Yes,Multiple Stem,Rapid,16.0,No,Yes,Long,No,None,Yes,Climbing,None,16
+38109,Summer,,None,Medium,No,Yes,No,White,Yes,Green,,,Medium,Blue,Yes,Single Crown,Rapid,1.0,No,No,Moderate,No,None,No,Climbing,None,
+87444,Spring and Summer,,None,High,No,Yes,No,,No,Green,,,Coarse,Blue,No,Stoloniferous,Rapid,1.0,No,No,Moderate,No,None,Yes,Prostrate,None,
+69379,,,,,,,,,,,,,,,,,,,,,,,,,,,
+69382,Spring,,None,,No,No,No,Yellow,Yes,Green,Porous,Porous,Medium,Brown,Yes,Single Stem,Rapid,16.0,No,No,Moderate,No,None,Yes,Climbing,None,
+61548,Summer,,None,,No,No,Yes,Red,No,Green,Porous,Porous,Medium,Black,No,Single Crown,Rapid,1.0,No,No,Moderate,No,None,No,Prostrate,None,
+87511,,,,,,,,,,,,,,,,,,,,,,,,,,,
+87526,Spring and Summer,,None,High,No,No,No,White,No,Green,Dense,Porous,Fine,Blue,No,Multiple Stem,Moderate,45.0,No,No,Long,No,None,Yes,Climbing,None,
+87550,"Spring, Summer, Fall",,None,High,No,Yes,No,White,No,Green,Moderate,Porous,Fine,Black,Yes,Multiple Stem,Moderate,83.0,No,No,Long,No,None,Yes,Climbing,None,
