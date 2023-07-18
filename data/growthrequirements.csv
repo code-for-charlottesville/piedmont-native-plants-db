@@ -24,6 +24,7 @@ Yes,Yes,Yes,Medium,High,Yes,Low,Medium,High,110,High,Medium,7.5,5.5,1800,700,60,
 Yes,No,Yes,None,Medium,Yes,Medium,Low,None,100,Medium,Low,8.5,5.0,2700,700,65,10,24,Medium,Intolerant,-38,76871
 Yes,No,Yes,Medium,Medium,Yes,Medium,Low,Medium,85,Low,Medium,7.0,4.8,1200,700,60,34,30,Low,Tolerant,-38,88685
 Yes,No,Yes,Low,Low,Yes,Medium,Medium,High,100,Low,Medium,7.2,4.5,1700,700,55,35,24,None,Tolerant,-43,88708
+,,,,,,,,,,,,,,,,,,,,,,88716
 ,,,,,,,,,,,,,,,,,,,,,,43228
 Yes,Yes,Yes,Medium,High,No,High,Medium,High,190,None,Medium,8.5,6.5,,,55,20,20,Medium,Intolerant,-9,20316
 Yes,Yes,Yes,High,None,No,Low,Low,Medium,160,None,High,6.3,5.0,18000,11000,70,35,12,Low,Intolerant,-23,20324
@@ -258,6 +259,7 @@ No,Yes,Yes,Medium,Medium,No,Medium,Medium,High,120,None,Medium,7.3,5.2,11000,480
 Yes,Yes,Yes,Medium,Low,No,Low,Medium,Low,100,None,High,7.2,4.6,7000,4800,55,30,10,None,Intermediate,-28,68521
 Yes,Yes,Yes,Medium,Low,No,Medium,Low,High,160,Medium,Medium,6.5,3.5,3450,1746,60,30,12,None,Tolerant,-18,74925
 Yes,Yes,Yes,High,Medium,Yes,Low,Medium,Low,165,Medium,High,7.0,4.5,2700,1200,60,32,16,Medium,Intolerant,-13,74928
+,,,,,,,,,,,,,,,,,,,,,,74940
 Yes,No,Yes,Low,Low,Yes,Medium,Medium,Low,140,Medium,Medium,7.0,4.5,800,300,80,40,30,Medium,Tolerant,-20,74958
 No,Yes,Yes,Low,Low,Yes,Low,Medium,Low,140,Low,High,7.5,4.5,2700,700,60,35,16,None,Intermediate,-33,74975
 Yes,No,Yes,None,Low,Yes,High,Low,Low,200,Low,Low,7.0,4.5,1200,680,55,36,20,Medium,Intermediate,7,74982

@@ -24,6 +24,7 @@ Spring and Summer,,None,No,Yes,Yes,White,Yes,Green,Dense,Porous,Coarse,Purple,Ye
 Summer,,None,Yes,Yes,No,Purple,Yes,Yellow-Green,Dense,Porous,Fine,Brown,Yes,Multiple Stem,Slow,15.0,No,No,Moderate,No,Medium,Yes,Rounded,Slight,76871,High,6
 Spring and Summer,,None,Yes,Yes,No,White,Yes,Green,Moderate,Porous,Medium,Purple,Yes,Multiple Stem,Moderate,35.0,No,No,Short,No,None,Yes,Erect,None,88685,High,30
 Spring and Summer,,None,No,No,No,White,Yes,Green,Moderate,Porous,Medium,Purple,Yes,Single Stem,Moderate,10.0,No,No,Moderate,No,None,Yes,Erect,None,88708,High,10
+,,,,,,,,,,,,,,,,,,,,,,,,,88716,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,43228,,
 Summer,Moderate,None,No,No,No,Yellow,No,Green,Dense,Porous,Medium,Brown,No,Bunch,Moderate,7.0,No,No,Long,No,None,No,Erect,None,20316,Medium,
 Summer,Moderate,None,No,Yes,No,White,No,Green,Dense,Moderate,Fine,Brown,No,Bunch,Moderate,6.3,No,No,Moderate,Yes,None,No,Erect,None,20324,Medium,
@@ -258,6 +259,7 @@ Spring,Slow,None,No,No,No,Yellow,Yes,Green,Porous,Porous,Coarse,Black,No,Single 
 Spring and Summer,,None,No,No,No,Yellow,Yes,Green,Moderate,Porous,Medium,Brown,No,Single Crown,Moderate,3.2,No,No,Moderate,No,None,No,Erect,None,68521,High,
 Spring and Summer,,None,Yes,No,No,Yellow,No,Dark Green,Dense,Moderate,Medium,Red,Yes,Multiple Stem,Rapid,33.0,No,No,Moderate,No,None,Yes,Erect,Slight,74925,,33
 Summer and Fall,,None,No,No,Yes,White,No,Green,Moderate,Porous,Coarse,Black,Yes,Multiple Stem,Slow,8.0,No,Yes,Long,No,None,No,Erect,None,74928,High,5
+,,,,,,,,,,,,,,,,,,,,,,,,,74940,,
 Spring and Summer,,None,No,Yes,No,Yellow,No,Green,Dense,Dense,Coarse,Red,Yes,Single Stem,Slow,40.0,No,Yes,Moderate,No,None,Yes,Erect,None,74958,High,20
 Spring and Summer,,None,No,Yes,No,White,No,Green,Dense,Moderate,Coarse,Red,Yes,Multiple Stem,Moderate,9.0,No,No,Moderate,No,None,Yes,Climbing,None,74975,High,6
 Spring and Summer,,None,Yes,Yes,No,White,No,Green,Moderate,Moderate,Coarse,Red,Yes,Multiple Stem,Slow,25.0,No,Yes,Long,No,None,Yes,Erect,None,74982,High,20

@@ -24,6 +24,7 @@ Id,Symbol,ScientificName,CommonName,Group,Durations,GrowthHabits
 76871,AMFR,<i>Amorpha fruticosa</i> L.,false indigo bush,Dicot,['Perennial'],['Shrub']
 88685,AMLA,<i>Amelanchier laevis</i> Wiegand,Allegheny serviceberry,Dicot,['Perennial'],"['Shrub', 'Tree']"
 88708,AMSA,<i>Amelanchier sanguinea</i> (Pursh) DC.,roundleaf serviceberry,Dicot,['Perennial'],"['Shrub', 'Tree']"
+88716,AMST80,<i>Amelanchier stolonifera</i> Wiegand,running serviceberry,Dicot,['Perennial'],['Shrub']
 43228,AMTA2,<i>Amsonia tabernaemontana</i> Walter,eastern bluestar,Dicot,['Perennial'],['Forb/herb']
 20316,ANGE,<i>Andropogon gerardii</i> Vitman,big bluestem,Monocot,['Perennial'],['Graminoid']
 20324,ANGL2,"<i>Andropogon glomeratus</i> (Walter) Britton, Sterns & Poggenb.",bushy bluestem,Monocot,['Perennial'],['Graminoid']
@@ -258,6 +259,7 @@ Id,Symbol,ScientificName,CommonName,Group,Durations,GrowthHabits
 68521,HYPR,<i>Hypericum prolificum</i> L.,shrubby St. Johnswort,Dicot,['Perennial'],"['Shrub', 'Subshrub']"
 74925,ILDE,<i>Ilex decidua</i> Walter,possumhaw,Dicot,['Perennial'],"['Shrub', 'Tree']"
 74928,ILGL,<i>Ilex glabra</i> (L.) A. Gray,inkberry,Dicot,['Perennial'],['Shrub']
+74940,ILMO,<i>Ilex montana</i> Torr. & A. Gray ex A. Gray,mountain holly,Dicot,['Perennial'],"['Shrub', 'Tree']"
 74958,ILOP,<i>Ilex opaca</i> Aiton,American holly,Dicot,['Perennial'],"['Shrub', 'Tree']"
 74975,ILVE,<i>Ilex verticillata</i> (L.) A. Gray,common winterberry,Dicot,['Perennial'],"['Shrub', 'Tree']"
 74982,ILVO,<i>Ilex vomitoria</i> Aiton,yaupon,Dicot,['Perennial'],"['Shrub', 'Tree']"
